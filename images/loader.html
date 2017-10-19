@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<style>
+  .overlay {
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+  }
+
+
+
+
+  body {
+    overflow-y: auto;
+    background-color: #cecfff;
+  }
+
+  .pendulum {
+    position: absolute;
+    width: 220px;
+    height: 180px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    border-radius: 5%;
+    align-items: center;
+    border-top: 15px solid #eee7d5;
+    transform: translate(-50%, -50%);
+  }
+
+  .pendulum_box {
+    display: flex;
+    padding: 120px 0 0 10px;
+    position: absolute;
+    flex: 1;
+  }
+
+  .ball {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    transform-origin: 50% -300%;
+
+  }
+
+  .ball::before {
+    content: '';
+    width: 2px;
+    height: 120px;
+    background-color: #c9c9c9;
+    left: 18px;
+    top: -120px;
+    position: absolute;
+  }
+
+  .ball.first {
+    animation: firstball .9s alternate ease-in infinite;
+  }
+
+  @keyframes firstball {
+    0% {
+      transform: rotate(35deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .ball.last {
+    animation: lastball .9s alternate ease-out infinite;
+  }
+
+  @keyframes lastball {
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-35deg);
+    }
+  }
+</style>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="pendulum">
+      <div class="pendulum_box">
+        <div class="ball first" style="background-color:FFE6EC"></div>
+        <div class="ball" style="background-color:FFC9D7"></div>
+        <div class="ball" style="background-color:#FFA5BD"></div>
+        <div class="ball" style="background-color:#FF7F9F"></div>
+        <div class="ball last" style="background-color:#fc678c"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content">
+    <h2>CLASS="CODE"</h2>
+    <h3>Tutorial</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nXSEIuKGF60" frameborder="0" allowfullscreen></iframe>
+    <p>This pen was created to give an example on how to implement a pre-loading screen for a site. This video demonstrates how to create SVG animations! :D</p>
+  </div>
+
+  <script>
+    $(window).load(function(e) {
+      $(".overlay").fadeOut(2000);
+    });
+  </script>
+</body>
+
+</html>
