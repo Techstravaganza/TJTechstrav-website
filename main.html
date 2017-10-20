@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<style>
+  .overlay {
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #cecfff;
+
+  }
+
+  .pendulum {
+    position: absolute;
+    width: 220px;
+    height: 180px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    border-radius: 5%;
+    align-items: center;
+    border-top: 15px solid #eee7d5;
+    transform: translate(-50%, -50%);
+  }
+
+  .pendulum_box {
+    display: flex;
+    padding: 120px 0 0 10px;
+    position: absolute;
+    flex: 1;
+  }
+
+  .ball {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    transform-origin: 50% -300%;
+
+  }
+
+  .ball::before {
+    content: '';
+    width: 2px;
+    height: 120px;
+    background-color: #c9c9c9;
+    left: 18px;
+    top: -120px;
+    position: absolute;
+  }
+
+  .ball.first {
+    animation: firstball .9s alternate ease-in infinite;
+  }
+
+  @keyframes firstball {
+    0% {
+      transform: rotate(35deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .ball.last {
+    animation: lastball .9s alternate ease-out infinite;
+  }
+
+  @keyframes lastball {
+    50% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-35deg);
+    }
+  }
+</style>
+
+<html xmlns:fb="http://ogp.me/ns/fb#">
+  <html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="TJ Techstravaganza" />
+    <title>TJ Techstravaganza</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <style>
+      .whiteshdw {
+        position: absolute;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 1.5px #7a7a7a;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .whiteshdwsmall {
+        position: absolute;
+        text-align: center;
+        color: white;
+        text-shadow: 1.5px 0.5px #7a7a7a;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      td {
+        vertical-align: top;
+      }
+
+      th,
+      td {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .tableimages {
+        width: 7vw;
+        height: 7vw;
+        padding: 5px;
+      }
+
+      .pastlogos {
+        height: auto;
+        display: inline-block;
+      }
+    </style>
+    <div class="overlay">
+
+      <div class="pendulum">
+        <div class="pendulum_box">
+          <div class="ball first" style="background-color:#FFE6EC"></div>
+          <div class="ball" style="background-color:#FFC9D7"></div>
+          <div class="ball" style="background-color:#FFA5BD"></div>
+          <div class="ball" style="background-color:#FF7F9F"></div>
+          <div class="ball last" style="background-color:#fc678c"></div>
+        </div>
+      </div>
+
+      <div style="font-size:40px;text-align:center; z-index:1; padding-top:70vh; vertical-align:middle;color: white;text-shadow: 1.5px 0px #7a7a7a;">Loading...</div>
+    </div>
+
+    <div id="wrapper">
+
+
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            <a class="navbar-brand" href="/main.html"><img src="/images/homebtn.png" style="max-width:12%; height:auto;transform: translateY(-22%);"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar" style="font-size:2.5vmax">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">PHOTOS</a>
+                <div class="dropdown-content">
+                  <a href="2015photos.html">TECHSTRAV 2015</a>
+                  <a href="2016photos.html">TECHSTRAV 2016</a>
+                  <a href>TECHSTRAV 2017</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">SUPPORT US</a>
+                <div class="dropdown-content">
+                  <a href="donate.html">DONATE</a>
+                  <a href="volunteer.html">VOLUNTEER</a>
+                </div>
+              </li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Social Media Buttons -->
+      <div>
+        <a href="https://www.facebook.com/TJTechstrav/" target="_blank" title="Facebook">
+        <img style="top:10vmax" id="fbBtn" class="snsButton" src="/images/sns icons/facebookicon.png">
+      </a>
+
+        <a href="https://www.instagram.com/tjtechstrav/" target="_blank" title="Instagram">
+        <img style="top:20vmax" id="igBtn" class="snsButton" src="/images/sns icons/instagramicon.png">
+      </a>
+
+        <a href="" target="_blank" title="Yelp">
+        <img style="top:30vmax" id="yelpBtn" class="snsButton" src="/images/sns icons/yelpicon.png">
+      </a>
+
+        <a href="https://twitter.com/TJTechstrav" target="_blank" title="Twitter">
+        <img style="top:40vmax" id="twBtn" class="snsButton" src="/images/sns icons/twittericon.png">
+      </a>
+      </div>
+
+      <!-- Countdown -->
+      <div style="position:relative; width:100%; padding-bottom:25px;">
+        <img src="/images/computer17.jpg" style="width:100%; height:auto; opacity:0.8">
+        <div class="whiteshdw" style="font-size:6vmax; top:10%">Techstravaganza 2018</div>
+        <div class="whiteshdw" style="font-size:3vmax; top:30%;">May 19, 2018 | 10 AM~4 PM<br></div>
+        <div class="whiteshdw" style="font-size:2.5vmax; top:40%;">Thomas Jefferson High School for Science and Technology</div>
+        <table cellpadding="2" cellspacing="2" width="100%" class="whiteshdw" style="top:60%; font-size:5vmax;">
+          <col width="25%">
+          <col width="25%">
+          <col width="25%">
+          <col width="25%">
+          <tr>
+            <td id="days"></td>
+            <td id="hours"></td>
+            <td id="mins"></td>
+            <td id="secs"></td>
+          </tr>
+
+          <tr>
+            <td style="font-size:2.5vmax; ">Days</td>
+            <td style="font-size:2.5vmax;">Hours</td>
+            <td style="font-size:2.5vmax;">Minutes</td>
+            <td style="font-size:2.5vmax;">Seconds</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- FAQ -->
+      <div style="margin:10px">
+        <table cellpadding="55" width="100%" style="font-size:5vmax; margin:15px;">
+          <col width="34%">
+          <col width="37%">
+          <col width="29%">
+          <tr>
+            <td><img src="/images/about.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
+            <td><img src="/images/who.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
+            <td><img src="/images/why.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
+          </tr>
+          <tr class="tableheader">
+            <td>About Techstrav</td>
+            <td>Who Can Attend?</td>
+            <td>Why Come?</td>
+          </tr>
+
+          <tr class="tablecontent">
+            <td>
+              Techstravaganza is a free, open to the public hands-on STEM activity fair that attracts thousands of visitors from the DMV area each year. This past year, we had over 2900 visitors from over 192 different schools.
+              <br><br>Each year, we have over 300 TJ student volunteers and over a dozen exhibiting companies who help us make this event possible.
+            </td>
+            <td>This event is open to children of all ages! However, our labs do specifically target elementary and middle school students.<br><br> Techstravaganza is also a great family event. Not only do the children walk away having learned something new,
+              the parents do to!
+            </td>
+            <td>
+              At Techstravaganza, you will find over 50 different labs and demonstrations that cover a wide range of STEM concepts so there is something for everyone!<br><br> Some of our most popular labs include Banana DNA, Making Ice Cream, and Stomp
+              Rockets!
+            </td>
+          </tr>
+        </table>
+
+        <table cellpadding="55" width="100%" style="font-size:5vmax; padding-top:15px;">
+          <col width="32%">
+          <col width="30%">
+          <col width="38%">
+          <tr>
+            <td><img src="/images/organizes.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
+            <td><img src="/images/money.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
+            <td rowspan="3">
+              <div style="width:100%; text-align:left;"><iframe src="//eventbrite.com/tickets-external?eid=35414114570&ref=etckt" frameborder="0" style="height:78vh;" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                <div style="font-family: 'Work Sans', sans-serif; font-size:1.5vmax; padding:10px 0 5px; margin:2px; width:100%; text-align:left;"><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr class="tableheader">
+            <td>Who Runs It?</td>
+            <td>Why Register?</td>
+          </tr>
+          <tr class="tablecontent">
+            <td><a href="/2017Team.html" style="color:#5d5d5e; font-weight:400;">TWIST (Tomorrow's Women in Science and Technology)</a> organizes the event and is a student-run STEM outreach organization at TJHSST. <br><br>Our mission is to encourage students
+              from diverse and low-income backgrounds to pursue STEM subjects. <br><br>We aim to increase female enrollment in traditionally underrepresented TJ research labs by empowering girls within our school community to pursue careers in these fields.</td>
+            <td>By registering, we are able to get a better estimate of how many lab materials to prepare for the day. <br><br>In addition, this signs you up for our email list so we can send out notifications regarding logistics. We also use EventBrite to
+              check in visitors so this helps speed up the signin process. <br><br> Tickets are free because we want this event to be accesible to everyone.</td>
+          </tr>
+        </table>
+
+
+      </div>
+
+      <!-- 2017 Sponsors -->
+      <div style="padding-bottom:5vh">
+        <div class="tableheader" style="text-align:left;padding-top:3%; padding-left:2vmax; ">
+          <font size="8vmax">2017 Sponsors</font>
+        </div>
+
+        <a href="http://tjpartnershipfund.org/" target="_blank">
+      <img src="/images/17Sponsor/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;max-width: 16vw;">
+    </a>
+
+        <a href="http://www.indrasoft.com/" target="_blank">
+      <img src="/images/17Sponsor/Indrasoft.png" class="pastlogos" title="IndraSoft" style="max-width: 14vw;">
+    </a>
+
+        <a href="http://www.robotworksacademy.net/" target="_blank">
+      <img src="/images/17Sponsor/RobotWorks.jpg" class="pastlogos" title="RobotWorks" style="max-width: 23vw;">
+    </a>
+
+        <a href="http://www.zolontech.com/" target="_blank">
+      <img src="/images/17Sponsor/ZolonVector.png" class="pastlogos" title="ZolonTech" style="max-width: 22vw;">
+    </a>
+      </div>
+
+      <hr style="color:#e5e5e5;border-top: dotted 3px;height:2px;line-height:0;width:100%;" />
+
+      <!-- 2017 Exhibitors -->
+      <div>
+        <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
+          <font size="8vmax">2017 Exhibitors</font>
+        </div>
+
+        <a href="techshop.com" target="_blank">
+      <img src="/images/17Exhib/TechShop.png" class="pastlogos" title="TechShop" style="padding-left:2vw;padding-bottom:4vh;max-width: 16vw;">
+    </a>
+
+        <a href="www.alarm.com" target="_blank">
+      <img src="/images/17Exhib/Alarm.com .PNG" class="pastlogos" title="Alarm.Com" style="padding-left:2vw;padding-bottom:4vh;max-width: 13vw;">
+    </a>
+
+        <a href="www.roboticsforyouth.org" target="_blank">
+      <img src="/images/17Exhib/RBY.png" class="pastlogos" title="Robotics For Youth" style="padding-left:2vw;padding-bottom:4vh;max-width: 10vw;">
+    </a>
+
+        <a href="http://www.stemallstars.org/" target="_blank">
+      <img src="/images/17Exhib/STEMAllStars.png" class="pastlogos" title="STEM All Stars" style="padding-left:2vw;padding-bottom:4vh;max-width: 16vw;">
+    </a>
+
+        <a href="https://fiscalnote.com/" target="_blank">
+      <img src="/images/17Exhib/Fiscal Note.jpg" class="pastlogos" title="FiscalNote" style="padding-left:2vw;padding-bottom:4vh;max-width: 16vw;">
+    </a>
+
+        <a href="vienna.aopsacademy.org" target="_blank">
+      <img src="/images/17Exhib/AOPS.png" class="pastlogos" title="Aops Academy" style="padding-left:2vw;padding-bottom:4vh;max-width: 16vw;">
+    </a>
+
+        <a href="https://www.fhwa.dot.gov/research/" target="_blank">
+      <img src="/images/17Exhib/Federal Highway Administration.png" class="pastlogos" title="Federal Highway Administration" style="padding-left:2vw;padding-bottom:4vh;max-width: 16vw;">
+    </a>
+
+        <a href="http://childsci.org/" target="_blank">
+      <img src="/images/17Exhib/CSC.gif" class="pastlogos" title="Children's Science Center" style="padding-left:2vw;padding-bottom:4vh;max-width: 10vw;">
+    </a>
+
+        <a href="http://www.goodroadsmovement.com/" target="_blank">
+      <img src="/images/17Exhib/GoodRoads.jpg" class="pastlogos" title="The Bureau of Good Roads" style="padding-left:2vw;padding-bottom:4vh;max-width: 16vw;">
+    </a>
+
+        <a href="http://booleangirl.org" target="_blank">
+      <img src="/images/17Exhib/BooleanGirl.png" class="pastlogos" title="Boolean Girl" style="padding-left:2vw;padding-bottom:4vh;max-width: 16vw;">
+    </a>
+
+        <a href="https://facebook.com/vex999a/" target="_blank">
+      <img src="/images/17Exhib/Vex.png" class="pastlogos" title="Vex Robotics" style="padding-left:2vw;padding-bottom:4vh;max-width: 11vw;">
+    </a>
+
+        <a href="https://coder-kids.com" target="_blank">
+      <img src="/images/17Exhib/CoderKids.png" class="pastlogos" title="Coder Kids" style="padding-left:2vw;padding-bottom:4vh;max-width: 12vw;">
+    </a>
+
+        <a href="www.robotworksacademy.net" target="_blank">
+      <img src="/images/17Exhib/RobotWorks.jpg" class="pastlogos" title="RobotWorks" style="padding-left:2vw;padding-bottom:4vh;max-width: 22vw;">
+    </a>
+
+        <a href="https://www.makeschool.com/" target="_blank">
+      <img src="/images/17Exhib/MakeSchool.png" class="pastlogos" title="Make School" style="padding-left:2vw;padding-bottom:4vh;max-width: 13vw;">
+    </a>
+      </div>
+
+      <hr style="color:#e5e5e5;border-top: dotted 3px;height:2px;line-height:0;width:100%;" />
+
+      <!-- Google Maps & Contact -->
+      <table style="padding-top:15vh; width:100%">
+        <col width=55%>
+        <col width=45%>
+        <tr>
+          <td>
+            <div style="padding-bottom:4vh;">
+              <img src="/images/where.png" class="tableimages" title="small-n-flat icons by Paomedia (CC BY 3.0)" style="float:left; margin-right:1vw; margin-left:3vw">
+              <div class="tableheader" style="font-size:4vw;line-height:7vw;">WHERE</div>
+            </div>
+
+            <iframe width="100%" frameborder="10" style="height:65vh; border-radius:15px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJleh3KOCyt4kRq7zT9EpWL8E&key=AIzaSyA7npBluaABZS9BTs6y2Sf1JKEic4iYR4k" allowfullscreen></iframe>
+          </td>
+
+          <td>
+            <div style="padding-bottom:3vh;">
+              <img src="/images/17Exhib/contact.png" class="tableimages" title="small-n-flat icons by Paomedia (CC BY 3.0)" style="float:left; margin-right:1vw;">
+              <div class="tableheader" style="font-size:4vw;line-height:7vw;">CONTACT</div>
+            </div>
+            <div style="opacity:0.8;background-image:url('/images/contactbg2.jpg'); background-size:100%; background-repeat:no-repeat; background-position:center; width:100%; height:65vh; border-radius:15px;">
+              <div class="whiteshdwsmall" style="margin-top:10vh;">
+                <table>
+                  <col span=100%>
+                  <tr>
+                    <td>
+                      <img src="/images/email.png" title="Shoot Us An Email!" style="padding-left:0.5vw;float:left; margin-right:1vw; width:auto; height:3.5vw;">
+                      <div style=" width:85%;font-size:1.6vw; color:white; font-weight:800; text-align:left; line-height:3vw;">twistcoordinators@gmail.com<br></div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="/images/mail.png" title="Send Mail Here Addresed to TJ TWIST" style="padding-left:0.5vw;float:left; margin-right:1vw; width:auto; height:3.5vw;margin-top:1.5vh;">
+                      <div style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;">6560 Braddock Road, Alexandria, VA 22312</div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <img src="/images/fb.png" title="PM Us on Facebook!" style="padding-left:0.5vw;float:left; margin-right:1vw; width:auto; height:3.5vw;margin-top:1.5vh;">
+                      <div style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"><a href="https://www.facebook.com/TJTechstrav/">@TJTechstrav</a></div>
+                    </td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Back to Top Button -->
+      <button onclick="topFunction()" id="myBtn" title="Back to Top"></button>
+
+
+      <!-- Footer -->
+      <div id="footer" style="font-size:2.75vmax;">
+        <i>Organized and Owned by TJ TWIST</i>
+        <br />
+      </div>
+      <br>
+      <br>
+
+      <script>
+        var countDownDate = new Date("May 19, 2018 10:00:00").getTime();
+
+        var x = setInterval(function() {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("mins").innerHTML = minutes;
+          document.getElementById("secs").innerHTML = seconds;
+
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+
+      <script>
+        $(window).load(function(e) {
+          $(".overlay").fadeOut(2000);
+        });
+      </script>
+
+      <!-- Back to Top Function -->
+      <script>
+        // When the user scrolls down 10px from the top of the document, show the button
+        window.onscroll = function() {
+          scrollFunction()
+        };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("myBtn").style.display = "block";
+          }
+          else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+
+  </body>
+
+  </html>
+ 
