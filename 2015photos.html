@@ -112,7 +112,8 @@
                     resp.appendChild(gallery);
                     document.getElementById("pics").appendChild(resp);
 
-                    var t=document.getElementById("pics").createTextNode(allText);
+                    var t=document.createTextNode(allText);
+                    document.getElementById("pics").appendChild(t);
                 }
             }
         }
