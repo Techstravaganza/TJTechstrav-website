@@ -99,21 +99,11 @@
                 if(rawFile.status === 200 || rawFile.status == 0)
                 {
                     var allText = rawFile.responseText;
-                    var resp=document.createElement("div");
-                    resp.className='responsive';
-                    var gallery=document.createElement("div");
-                    gallery.className='gallery';
-                    gallery.setAttribute("target","_blank")
-                    gallery.setAttribute("href",allText+"");
-                    gallery.setAttribute("type", "image");
-                    gallery.setAttribute("src",allText+"");
-                    gallery.setAttribute("width", "300");
-                    gallery.setAttribute("height","200");
-                    resp.appendChild(gallery);
-                    document.getElementById("pics").appendChild(resp);
-
-                    var t=document.createTextNode(allText);
-                    document.getElementById("pics").appendChild(t);
+                    var image=document.createElement("IMG");
+                    image.setAttribute("src",allText+"");
+                    image.setAttribute("width", "300");
+                    image.setAttribute("height","200");
+                    document.getElementById("pics").appendChild(image);
                 }
             }
         }
