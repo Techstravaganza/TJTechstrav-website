@@ -11,6 +11,50 @@
     color: #163c69;
     font-size: 2.35vmin;
   }
+  .carouseltext {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 2.6vmin;
+  }
+  .tableheader {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    color: #3c3f42;
+    text-align: left;
+    font-size: 5vmin;
+    text-shadow: 0.5px 0.5px #b0b1b2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .tablecontent {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: lighter;
+    width: 100%;
+    color: gray;
+    text-align: left;
+    font-size: 1.25vmax;
+    padding: 10px;
+  }
+  div#headerlabel {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size: 9.5vmin;
+    text-shadow: 1px 1px #b0b1b2;
+  }
+  .contenttxt {
+    font-family: 'Work Sans', sans-serif;
+    float: left;
+    width: 100%;
+    color: black;
+    text-align: left;
+    font-size: 2.75vmin;
+    color: #424447;
+  }
   div#wrapper {
     width: 80vw;
     margin-bottom: auto;
@@ -24,7 +68,19 @@
     padding-bottom: 0.8vmin;
     width: 100%;
   }
-  nav {
+  div#slider {
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+  }
+  div#footer {
+    background-color: #163c69;
+    float: left;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  #nav {
     text-align: center;
     background-color: #163c69;
     line-height: 30px;
@@ -139,45 +195,14 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
-div.gallery {
-    border: 1px solid #ccc;
-}
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0 6px;
+  .box {
+    border-radius: 10px;
+    transition: box-shadow .5s;
     float: left;
-    width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px){
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-} 
+    margin: 9px;
+  }
+  .box:hover {
+    box-shadow: 4px 4px 8px #adadad;
+  }
 }
