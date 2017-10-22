@@ -91,6 +91,7 @@
   <script>
     window.onload = function() {
         var rawFile = new XMLHttpRequest();
+        var array=[];
         rawFile.open("GET", "2015photolist.txt", false);
         rawFile.onreadystatechange = function ()
         {
@@ -99,19 +100,19 @@
                 if(rawFile.status === 200 || rawFile.status == 0)
                 {
                     var allText = rawFile.responseText;
-                    console.log(allText);
-                    var image=document.createElement("IMG");
-                    image.setAttribute("src",allText+"");
-                    image.setAttribute("width", "300");
-                    image.setAttribute("height","200");
-                    document.getElementById("pics").appendChild(image);
+                    array=allText.split("\n");
                 }
             }
         }
+        for(n=0; n<array.length; n++){
+          file=array[n];
+          var image=document.createElement("IMG");
+          image.setAttribute("src",file+"");
+          image.setAttribute("width", "300");
+          image.setAttribute("height","200");
+          document.getElementById("pics").appendChild(image);
+        }
         rawFile.send(null);
-        var clearfix=document.createElement("div");
-        clearfix.className='clearfix';
-        document.getElementById("pics").appendChild(clearfix);
     }
   </script>
 
