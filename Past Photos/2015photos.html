@@ -85,40 +85,16 @@
       </table>
       <div style="color:#4f5089;font-style:italic; font-weight:800;font-family: 'Julius Sans One', sans-serif; text-align:center; font-size:2.3vw;">TJHSST's Annual STEM Outreach Event</div>
     </div>
-    <div id="pics"></div>
   </div>
   </body>
   <script>
-    window.onload = function() {
-        var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", "PastPhotos/2015photolist.txt", false);
-        rawFile.onreadystatechange = function ()
-        {
-            if(rawFile.readyState === 4)
-            {
-                if(rawFile.status === 200 || rawFile.status == 0)
-                {
-                    var allText = rawFile.responseText;
-                    var resp=document.createElement("div");
-                    resp.className='responsive';
-                    var gallery=document.createElement("div");
-                    gallery.className='gallery';
-                    gallery.setAttribute("target","_blank")
-                    gallery.setAttribute("href",allText+"");
-                    gallery.setAttribute("type", "image");
-                    gallery.setAttribute("src",allText+"");
-                    gallery.setAttribute("width", "300");
-                    gallery.setAttribute("height","200");
-                    resp.appendChild(gallery);
-                    document.getElementById("pics").appendChild(resp);
-                }
-            }
-        }
-        rawFile.send(null);
-        var clearfix=document.createElement("div");
-        clearfix.className='clearfix';
-        document.getElementById("pics").appendChild(clearfix);
-    }
+    function loadImages(){
+        var fs = require("fs");
+        fs.readFile("./mytext.txt", function(text){
+          var text = fs.readFileSync("./mytext.txt", "utf-8");
+        var textByLine = text.split("\n")
+        });
+      }
   </script>
 
 </html>
