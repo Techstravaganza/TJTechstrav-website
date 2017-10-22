@@ -91,7 +91,7 @@
   <script>
     window.onload = function() {
         var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", "PastPhotos/2015photolist.txt", false);
+        rawFile.open("GET", "2015photolist.txt", false);
         rawFile.onreadystatechange = function ()
         {
             if(rawFile.readyState === 4)
@@ -99,6 +99,7 @@
                 if(rawFile.status === 200 || rawFile.status == 0)
                 {
                     var allText = rawFile.responseText;
+
                     var image=document.createElement("IMG");
                     image.setAttribute("src",allText+"");
                     image.setAttribute("width", "300");
