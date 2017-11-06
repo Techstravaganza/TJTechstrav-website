@@ -19,7 +19,17 @@
     <link href="photostyle.css" rel="stylesheet" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <style>
+        img{
+            border-radius:5px;
+            padding:2vw;
+        }
+        div#pics {
+        width: 70vw;
+        margin: auto;
+        overflow: hidden;
+    }
+    </style>
 </head>
 
 <!-- Header -->
@@ -87,6 +97,15 @@
     </div>
     <div id="pics"></div>
   </div>
-  </body>
-  <script src="/2015photoadd.js"></script> 
+       <script type>
+         for(var i=1; i<=68; i++){
+            var x=document.createElement("IMG");
+            x.setAttribute("src", "Techstrav2015/"+i+".jpg");
+            x.setAttribute("width", "auto");
+            x.setAttribute("height","150");
+            x.setAttribute("id", i+"");
+            document.getElementById("pics").appendChild(x);
+        }
+        </script>
+    </body>
 </html>
