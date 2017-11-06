@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="TJ Techstravaganza" />
+    <title>TJ Techstravaganza</title>
+    <link href="photostyle.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        img{
+            border-radius:5px;
+            padding:2vw;
+        }
+        div#pics {
+        width: 70vw;
+        margin: auto;
+        overflow: hidden;
+    }
+    </style>
+</head>
+
+<!-- Header -->
+<html>
+
+  <body>
+    <div id="wrapper">
+      <!-- Navigation Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                    <a class="navbar-brand" href="/index.html"><img src="/images/homebtn.png" style="max-width:12%; height:auto;transform: translateY(-22%);"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar" style="font-size:2.5vmin">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Teams/2017Team.html">OUR TEAM</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">PHOTOS</a>
+                            <div class="dropdown-content">
+                                <a href="2015photos.html">TECHSTRAV 2015</a>
+                                <a href="2016photos.html">TECHSTRAV 2016</a>
+                                <a href="2017photos.html">TECHSTRAV 2017</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">SUPPORT US</a>
+                            <div class="dropdown-content">
+                                <a href="donate.html">DONATE</a>
+                                <a href="volunteer.html">VOLUNTEER</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      <!-- Social Media Buttons -->
+      <div>
+        <a href="https://www.facebook.com/TJTechstrav/" target="_blank" title="Facebook">
+        <img style="top:10vh" id="fbBtn" class="snsButton" src="/images/sns icons/facebookicon.png">
+      </a>
+
+        <a href="https://www.instagram.com/tjtechstrav/" target="_blank" title="Instagram">
+        <img style="top:20vh" id="igBtn" class="snsButton" src="/images/sns icons/instagramicon.png">
+      </a>
+
+        <a href="" target="_blank" title="Yelp">
+        <img style="top:30vh" id="yelpBtn" class="snsButton" src="/images/sns icons/yelpicon.png">
+      </a>
+
+        <a href="https://twitter.com/TJTechstrav" target="_blank" title="Twitter">
+        <img style="top:40vh" id="twBtn" class="snsButton" src="/images/sns icons/twittericon.png">
+      </a>
+      </div>
+    <div id="header" style="padding-top:40px; padding-bottom:15px;">
+      <table border="0" cellpadding="2" cellspacing="2" style="text-align: center; width: 100%">
+        <td width="60%" align="center"><img style="width:75vw" src="/images/header.png"></td>
+      </table>
+      <div style="color:#4f5089;font-style:italic; font-weight:800;font-family: 'Julius Sans One', sans-serif; text-align:center; font-size:2.3vw;">TJHSST's Annual STEM Outreach Event</div>
+    </div>
+    <div id="pics"></div>
+  </div>
+       <script type>
+         for(var i=1; i<=68; i++){
+            var x=document.createElement("IMG");
+            x.setAttribute("src", "Techstrav2015/"+i+".JPG");
+            x.setAttribute("width", "auto");
+            x.setAttribute("height","150");
+            x.setAttribute("id", i+"");
+            document.getElementById("pics").appendChild(x);
+        }
+        </script>
+    </body>
+</html>
