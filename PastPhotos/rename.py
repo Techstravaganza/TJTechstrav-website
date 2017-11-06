@@ -4,7 +4,7 @@ files = os.listdir(path)
 i = 1
 
 for file in files:
-    l=str(i)+"techstrav" + file[file.index('.'):]
+    l=str(i)+".JPG"
     print(l)
     os.rename(os.path.join(path, file), os.path.join(path, l))
     i = i+1
