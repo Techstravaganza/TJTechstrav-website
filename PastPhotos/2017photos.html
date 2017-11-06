@@ -19,10 +19,14 @@
     <link href="photostyle.css" rel="stylesheet" type="text/css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <style>
-        img{
+<style>
+        .gallery{
             border-radius:5px;
-            padding:2vw;
+            padding:10px;
+            padding-bottom:15px;
+            height:33vh;
+            width:auto;
+            align:center;
         }
         div#pics {
         width: 70vw;
@@ -97,15 +101,14 @@
     </div>
     <div id="pics"></div>
   </div>
-       <script type>
-         for(var i=1; i<=439; i++){
+  <script>
+           for(var i=1; i<=609; i++){
             var x=document.createElement("IMG");
-            x.setAttribute("src", "Techstrav2017/"+i+".JPG");
-            x.setAttribute("width", "auto");
-            x.setAttribute("height","150");
+            x.setAttribute("class","gallery")
+            x.setAttribute("src", "Techstrav2016/"+i+".JPG");
             x.setAttribute("id", i+"");
             document.getElementById("pics").appendChild(x);
         }
-        </script>
+    </script>
     </body>
 </html>
