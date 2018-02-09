@@ -224,5 +224,15 @@
         margin-top: 10px;
         margin-bottom: 10px;
       }
+ 	.teamheader {
+            text-align: left;
+            padding-left: 5vw;
+            font-size: 6.7vmin;
+            color: black;
+            padding-top: 3vh;
+            font-family: 'Julius Sans One', sans-serif;
+            font-weight: 600;
+            text-shadow: 0.75px 0.75px #7e7f82;
+        }
 
 }
