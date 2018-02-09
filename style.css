@@ -205,4 +205,24 @@
 	.box:hover {
 		box-shadow: 4px 4px 8px #adadad;
 	}
+	      .whiteshdw {
+        position: absolute;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 1.5px #7a7a7a;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .whiteshdwsmall {
+        position: absolute;
+        text-align: center;
+        color: white;
+        text-shadow: 1.5px 0.5px #7a7a7a;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
 }
