@@ -16,70 +16,18 @@
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="TJ Techstravaganza" />
+    <meta name="description" content="TJ Techstravaganza Materials" />
     <title>TJ Techstravaganza</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 
   </head>
   <body>
     <div id="wrapper">
-
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-                    <a class="navbar-brand" href="/index.html"><img src="/images/homebtn.png" style="max-width:12%; height:auto;transform: translateY(-22%);"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar" style="font-size:2.5vmin">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="Teams/2017Team.html">OUR TEAM</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">PHOTOS</a>
-                            <div class="dropdown-content">
-                                <a href="PastPhotos/2015photos.html">TECHSTRAV 2015</a>
-                                <a href="PastPhotos/2016photos.html">TECHSTRAV 2016</a>
-                                <a href="PastPhotos/2017photos.html">TECHSTRAV 2017</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">SUPPORT US</a>
-                            <div class="dropdown-content">
-                                <a href="donate.html">DONATE</a>
-                                <a href="volunteer.html">VOLUNTEER</a>
-                            </div>
-                        </li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- End of Navigation Bar -->
-
-
-      <!-- Social Media Buttons -->
-      <div>
-        <a href="https://www.facebook.com/TJTechstrav/" target="_blank" title="Facebook">
-        <img style="top:10vh" id="fbBtn" class="snsButton" src="/images/sns icons/facebookicon.png">
-      </a>
-
-        <a href="https://www.instagram.com/tjtechstrav/" target="_blank" title="Instagram">
-        <img style="top:20vh" id="igBtn" class="snsButton" src="/images/sns icons/instagramicon.png">
-      </a>
-
-        <a href="" target="_blank" title="Yelp">
-        <img style="top:30vh" id="yelpBtn" class="snsButton" src="/images/sns icons/yelpicon.png">
-      </a>
-
-        <a href="https://twitter.com/TJTechstrav" target="_blank" title="Twitter">
-        <img style="top:40vh" id="twBtn" class="snsButton" src="/images/sns icons/twittericon.png">
-      </a>
+      <div id="login" style="background-color:#cecfff">
+        Password: <input type="password" id="password">
+        <button onclick="first()"</button>
       </div>
-      <!-- End of Social Media Buttons →
+     
 
       <!-- Back to Top Button -->
       <button onclick="topFunction()" id="myBtn" title="Back to Top"></button>
