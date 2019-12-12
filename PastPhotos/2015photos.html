@@ -107,5 +107,40 @@
             document.getElementById("pics").appendChild(x);
         }
     </script>
+      
+      <!-- Back to Top Button -->
+      <button onclick="topFunction()" id="myBtn" title="Back to Top" style="display: block;"></button>
+
+
+      <!-- Footer -->
+      <div id="footer" style="font-size:12px;">
+        <i>Organized and Owned by TJ TWIST</i>
+        <br>
+      </div>
+      <br>
+      <br>
+      
+      <!-- Back to Top Function -->
+      <script>
+        // When the user scrolls down 10px from the top of the document, show the button
+        window.onscroll = function() {
+          scrollFunction()
+        };
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("myBtn").style.display = "block";
+          }
+          else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      
+      
     </body>
 </html>
