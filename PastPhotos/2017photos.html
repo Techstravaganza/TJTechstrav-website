@@ -106,10 +106,17 @@
             x.setAttribute("id", i+"");
             document.getElementById("pics").appendChild(x);     
       
-      for(var i=29; i<=354; i++){
+      for(var i=29; i<=180; i++){
             var x=document.createElement("IMG");
             x.setAttribute("class","gallery")
             x.setAttribute("src", "Techstrav2017/"+i+".JPG");
+            x.setAttribute("id", i+"");
+            document.getElementById("pics").appendChild(x);
+          
+          for(var i=181; i<=354; i++){
+            var x=document.createElement("IMG");
+            x.setAttribute("class","gallery")
+            x.setAttribute("src", "Techstrav2017/"+i+".jpg");
             x.setAttribute("id", i+"");
             document.getElementById("pics").appendChild(x);
         }
