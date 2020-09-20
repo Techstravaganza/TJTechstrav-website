@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en-us">
+<head>
+   <meta charset="utf-8">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="icon" href="../fav_icon_circle.ico">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="description" content="TJ Techstravaganza" />
+   <title>TJ Techstravaganza</title>
+   <link href="../style.css" rel="stylesheet" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+   
+<body>
+   <div id="wrapper">
+       <!-- Navigation Bar -->
+       <nav class="navbar navbar-default navbar-fixed-top">
+           <div class="container">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>                       
+     </button>
+                   <a class="navbar-brand" href="/index.html"><img src="/images/homebtn.png" style="max-width:12%; height:auto;transform: translateY(-22%);"></a>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar" style="font-size:2.5vmin">
+                   <ul class="nav navbar-nav navbar-right">
+                       <li><a href="Teams/2020Team.html">OUR TEAM</a></li>
+                       <li class="dropdown">
+                           <a href="javascript:void(0)" class="dropbtn">PHOTOS</a>
+                           <div class="dropdown-content">
+                               <a href="../PastPhotos/2015photos.html">TECHSTRAV 2015</a>
+			       <a href="../PastPhotos/2016photos.html">TECHSTRAV 2016</a>
+                               <a href="../PastPhotos/2017photos.html">TECHSTRAV 2017</a>
+                               <a href="../PastPhotos/2018photos.html">TECHSTRAV 2018</a>
+			       <a href="../PastPhotos/2019photos.html">TECHSTRAV 2019</a>
+                           </div>
+                       </li>
+                       <li class="dropdown">
+                           <a href="javascript:void(0)" class="dropbtn">SUPPORT US</a>
+                           <div class="dropdown-content">
+                               <a href="/donate.html">DONATE</a>
+                               <a href="/volunteer.html">VOLUNTEER</a>
+                           </div>
+                       </li>
+                       <li><a href="/contact.html">CONTACT</a></li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+
+     <!-- Social Media Buttons -->
+     <div>
+       <a href="https://www.facebook.com/TJTechstrav/" target="_blank" title="Facebook">
+       <img style="top:10vh" id="fbBtn" class="snsButton" src="/images/sns icons/facebookicon.png">
+     </a>
+       <a href="https://www.instagram.com/tj.twist/" target="_blank" title="Instagram">
+       <img style="top:20vh" id="igBtn" class="snsButton" src="/images/sns icons/instagramicon.png">
+     </a>
+       <a href="https://twitter.com/TJTechstrav" target="_blank" title="Twitter">
+       <img style="top:30vh" id="twBtn" class="snsButton" src="/images/sns icons/twittericon.png">
+     </a>
+     </div>
+
+          <!-- Header -->
+          <div id="header" style="padding-top:80px;">
+          <div id="headerlabel" style="padding-bottom:15px">OUR TEAM</div>
+
+           <!-- Rose Du -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/roseepfp.JPG" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Rose Du<br>
+                               <div style="font-size:3.75vmin;">President | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Rose is a senior and this is her fourth year in TWIST. This is her third year as an officer, specifically president. She is on the TJ dance team as well as a studio dancer at Axis Dance outside of school. She loves adventure but also loves to stay inside and bullet journal.<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Subject: </b>Biology<br>
+                                   <b>Favorite Sport: </b>Dance<br>
+                                   <b>Favorite Fast Food: </b>In n Out<br>
+                                   <b>Favorite Color: </b>Sea Green</a>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+           
+           <!-- Meghna Sharma -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/MeghnaSharmaPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Meghna Sharma<br>
+                               <div style="font-size:3.75vmin;">Co-President | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Meghna is a senior and this is her fourth year on TWIST and third year as officer and she's excited to be your co-pres! She swims for TJSD and in her free time she enjoys running, baking, photography, travelling, and listening to music!<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Sport: </b>Swim<br>
+                                   <b>Favorite Destination: </b>France<br>
+                                   <b>Favorite TV Show: </b>Gilmore Girls<br>
+                                   <b>Favorite Color: </b>Aquamarine<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+
+        <!-- Sarah Wang -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/swangy.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Sarah Wang<br>
+                               <div style="font-size:3.75vmin;">Treasurer | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Sarah is a senior who joined TWIST three years ago and is an officer this year. She loves watching Netflix, swimming, and traveling. <br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Food: </b>Pasta<br>
+                                   <b>Favorite Artist: </b>Surfaces<br>
+                                   <b>Favorite TV Show: </b>Stranger Things<br>
+                                   <b>Favorite Color: </b>Light Blue<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+
+           <!-- Brianna Ta -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/b (2).jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Brianna Ta<br>
+                               <div style="font-size:3.75vmin;">Publicist | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Brianna is a senior who joined TWIST two years ago and is an officer this year. She loves Netflix, wrestling, and listening to music!<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Subject: </b>Computer Science<br>
+                                   <b>Favorite TV Show: </b>Grey's Anatomy<br>
+                                   <b>Favorite Sport: </b>Wrestling<br>
+                                   <b>Favorite Food: </b>Pho<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+
+           <!-- Sheryn Livingstone -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/SherynPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Sheryn Livingstone<br>
+                               <div style="font-size:3.75vmin;">Treasurer | Junior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Sheryn is a junior and is looking forward to her second year as a TWIST officer and third year on Techstrav team! She loves tennis, listening to music, and watching Sunday night football. <br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite NFL Team: </b>Baltimore Ravens<br>
+                                   <b>Favorite Color: </b>Dark Purple<br>
+                                   <b>Favorite Movie: </b>Now You See Me<br>
+                                   <b>Favorite TV Show: </b>Parks & Rec<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+  
+   
+           <!-- Back to Top Button -->
+           <button onclick="topFunction()" id="myBtn" title="Back to Top"></button>
+
+           <!-- Footer -->
+           <div id="footer" style="font-size:2.75vmin;">
+               <i>Organized and Owned by TJ TWIST</i>
+               <br />
+           </div>
+           <br>
+           <br>
+           <script>
+               // When the user clicks on the button, scroll to the top of the document 
+               function topFunction() {
+                   document.body.scrollTop = 0;
+                   document.documentElement.scrollTop = 0;
+               }
+           </script>
+</body>
+</html>
