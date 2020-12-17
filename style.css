@@ -191,7 +191,7 @@
 		font-size:1.2vw;
 	}
 	.dropdown-content a:hover {
-		background-color: #f1f1f1
+		background-color: #f1f1f1;
 	}
 	.dropdown:hover .dropdown-content {
 		display: block;
@@ -206,8 +206,8 @@
 	.box:hover {
 		box-shadow: 4px 4px 8px #adadad;
 	}
-	      .whiteshdw {
-        
+
+	.whiteshdw {
         text-align: center;
         color: white;
         text-shadow: 2px 1.5px #7a7a7a;
@@ -226,14 +226,58 @@
         margin-bottom: 10px;
       }
  	.teamheader {
-            text-align: left;
-            padding-left: 5vw;
-            font-size: 6.7vmin;
-            color: black;
-            padding-top: 3vh;
-            font-family: 'Julius Sans One', sans-serif;
-            font-weight: 600;
-            text-shadow: 0.75px 0.75px #7e7f82;
-        }
+		text-align: left;
+		padding-left: 5vw;
+		font-size: 6.7vmin;
+		color: black;
+		padding-top: 3vh;
+		font-family: 'Julius Sans One', sans-serif;
+		font-weight: 600;
+		text-shadow: 0.75px 0.75px #7e7f82;
+	}
+		
+	a.labname {
+		text-align: left;
+		font-size: 6vmin;
+		color: black;
+		padding: 0;
+		padding-left: 20px;
+		font-family: 'Julius Sans One', sans-serif;
+		font-weight: 600;
+		text-shadow: 0.75px 0.75px #7e7f82;
+	}
+	a.labname:hover {
+		text-decoration: underline;
+		text-align: left;
+		padding: 0;
+		padding-left: 20px;
+		font-size: 6vmin;
+		color: #557283;
+		font-family: 'Julius Sans One', sans-serif;
+		font-weight: 600;
+		text-shadow: 0.75px 0.75px #7e7f82;
+		background-color: white;
+	}
+
+	.labsubheader {
+		text-align: left;
+		font-size: 3vmin;
+		color: black;
+		padding-left: 20px;
+		font-family: 'Julius Sans One', sans-serif;
+		font-weight: 600;
+		text-shadow: 0.75px 0.75px #7e7f82;
+	}
+
+	.labdescript {
+		font-family: 'Work Sans', sans-serif;
+		float: left;
+		width: 100%;
+		padding-left: 20px;
+		color: black;
+		text-align: left;
+		font-size:2.7vmin;
+		color:#969696;
+	}
 
 }
