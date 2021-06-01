@@ -237,13 +237,13 @@
       <!-- Countdown -->
       <div style="position:relative; width:100%; padding-bottom:75px;background-image:url(./images/ESCbg17.jpg); background-size: 1230px 850px;">
         <div class="whiteshdw" style="font-size:2.5vw; top:5%; padding-top: 120px">Virtual Edition</div>
-        <div class="whiteshdw" style="font-size:6vw; top:10%;">Techstravaganza 2021</div>
-        <div class="whiteshdw" style="font-size:3vw; top:30%;">May 15, 2021 | 10:00 AM ~ 2:15 PM<br></div>
+        <div class="whiteshdw" style="font-size:6vw; top:10%;">Techstravaganza 2022</div>
+        <div class="whiteshdw" style="font-size:3vw; top:30%;">May 21, 2022 | 10:00 AM ~ 4:00 PM<br></div>
         <div class="whiteshdw" style="font-size:2.5vw; top:40%;">Thomas Jefferson High School for Science and Technology</div>
         
         <!-- Button to go to Techstrav / change visibility to visible when it's time for techstrav-->
 
-        <div class = "whiteshdw" style = "padding-top: 15px;"><button style = "color: white; background-color: #557283; border-radius: 12px; padding: 15px 32px; font-size: 20px; font-weight: bold"onclick="document.location='./Techstrav/techstrav.html'">Click Here to Attend</button></div>
+        <div class = "whiteshdw" style = "padding-top: 15px;"><button style = "visibility: hidden; color: white; background-color: #557283; border-radius: 12px; padding: 15px 32px; font-size: 20px; font-weight: bold"onclick="document.location='./Techstrav/techstrav.html'">Click Here to Attend</button></div>
         
        
 
@@ -493,7 +493,7 @@
       <br>
 
       <script>
-        var countDownDate = new Date("May 15, 2021 10:00:00").getTime();
+        var countDownDate = new Date("May 22, 2022 10:00:00").getTime();
 
         var x = setInterval(function() {
           var now = new Date().getTime();
@@ -504,17 +504,10 @@
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-          // Uncomment and delete the lines below when you want the countdown to start again
-
-          /*document.getElementById("days").innerHTML = days;
+          document.getElementById("days").innerHTML = days;
           document.getElementById("hours").innerHTML = hours;
           document.getElementById("mins").innerHTML = minutes;
-          document.getElementById("secs").innerHTML = seconds;*/
-
-          document.getElementById("days").innerHTML = 0;
-          document.getElementById("hours").innerHTML = 0;
-          document.getElementById("mins").innerHTML = 0;
-          document.getElementById("secs").innerHTML = 0;
+          document.getElementById("secs").innerHTML = seconds;
 
           // If the count down is over, write some text 
           if (distance < 0) {
