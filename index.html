@@ -1,555 +1,312 @@
 <!DOCTYPE html>
-<html xmlns:fb="http://ogp.me/ns/fb#" lang="en-us"><head><style>
-  .overlay {
-    z-index: 1;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    background-color: #cecfff;
-
-  }
-
-  .pendulum {
-    position: absolute;
-    width: 220px;
-    height: 180px;
-    background-color: #ffffff;
-    top: 50%;
-    left: 50%;
-    border-radius: 5%;
-    align-items: center;
-    border-top: 15px solid #eee7d5;
-    transform: translate(-50%, -50%);
-  }
-
-  .pendulum_box {
-    display: flex;
-    padding: 120px 0 0 10px;
-    position: absolute;
-    flex: 1;
-  }
-
-  .ball {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    position: relative;
-    transform-origin: 50% -300%;
-
-  }
-
-  .ball::before {
-    content: '';
-    width: 2px;
-    height: 120px;
-    background-color: #c9c9c9;
-    left: 18px;
-    top: -120px;
-    position: absolute;
-  }
-
-  .ball.first {
-    animation: firstball .9s alternate ease-in infinite;
-  }
- .alert {
-	        padding: 25px;
-	        background-color: #f44336; /* Red */
-	        color: white;
-                font-size: 30px;
-	        margin-top: 50px; 
-	        margin-bottom: 0px;
-            
-	}
-        .closebtn {
-	        margin-left: 55px;
-	        color: white;
-	        font-weight: bold;
-	        float: right;
-	        font-size: 22px;
-	        line-height: 20px;
-	        cursor: pointer;
-	        transition: 0.3s;
-	}
-	.closebtn:hover {
-	        color: black;
-}
-	
-	.carouseltext {
-		font-family: 'Open Sans', sans-serif;
-		color: white;
-		font-size: 2.6vmin;
-	}
-
-  @keyframes firstball {
-    0% {
-      transform: rotate(35deg);
-    }
-    50% {
-      transform: rotate(0deg);
-    }
-  }
-
-  .ball.last {
-    animation: lastball .9s alternate ease-out infinite;
-  }
-
-  @keyframes lastball {
-    50% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(-35deg);
-    }
-  }
-</style>
-
-
-  
-
-  
-    <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="icon" href="fav_icon_circle.ico">
-
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="description" content="TJ Techstravaganza">
-    <title>TJ Techstravaganza</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Techstravaganza 2022</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
-
-  <body style="">
-    <style>
-      td {
-        vertical-align: top;
-      }
-
-      th,
-      td {
-        padding-left: 2vw;
-        padding-right: 2vw;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-
-      .tableimages {
-        width: 7vw;
-        height: 7vw;
-        padding: 5px;
-      }
-
-      .pastlogos {
-        height: auto;
-        display: inline-block;
-      }
-    </style>
-    <div class="overlay" style="display: none;">
-
-      <div class="pendulum">
-        <div class="pendulum_box">
-          <div class="ball first" style="background-color:#FFE6EC"></div>
-          <div class="ball" style="background-color:#FFC9D7"></div>
-          <div class="ball" style="background-color:#FFA5BD"></div>
-          <div class="ball" style="background-color:#FF7F9F"></div>
-          <div class="ball last" style="background-color:#fc678c"></div>
-        </div>
-      </div>
-
-      <div style="font-size:40px;text-align:center; z-index:1; padding-top:70vh; vertical-align:middle;color: white;text-shadow: 1.5px 0px #7a7a7a;">Loading...</div>
-    </div>
-
-    <div id="wrapper">
-
-
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-                    <a class="navbar-brand" href="./index.html"><img src="./images/homebtn.png" style="max-width:12%; height:auto;transform: translateY(-22%);"></a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar" style="font-size:2.5vmin">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="./Teams/2020Team.html">OUR TEAM</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">PHOTOS</a>
-                            <div class="dropdown-content">
-                                <a href="./PastPhotos/2015photos.html">TECHSTRAV 2015</a>
-				                        <a href="./PastPhotos/2016photos.html">TECHSTRAV 2016</a>
-                                <a href="./PastPhotos/2017photos.html">TECHSTRAV 2017</a>
-                                <a href="./PastPhotos/2018photos.html">TECHSTRAV 2018</a>
-                                <a href="./PastPhotos/2019photos.html">TECHSTRAV 2019</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">SUPPORT US</a>
-                            <div class="dropdown-content">
-                                <a href="./donate.html">DONATE</a>
-                            </div>
-                        </li>
-                        <li><a href="./contact.html">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
+  <body class="landing is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <h1><a href="index.html">Techstravaganza 2022</a></h1>
+        <nav id="nav">
+          <ul>
+            <li class="special">
+              <a href="#menu" class="menuToggle"><span>Menu</span></a>
+              <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="meetTeam.html">Meet Our Team</a></li>
+                  <li><a href="photos.html">Photos</a></li>
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </nav>
-      
-      <!-- Coronavirus Banner -->
-      
-      <!-- <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        Due to the COVID-19 pandemic, Techstrav 2021 will be <strong>virtual</strong>.
-      </div> -->
+      </header>
 
-      <!-- Social Media Buttons -->
-      <div>
-        <a href="https://www.facebook.com/TJTechstrav/" target="_blank" title="Facebook">
-        <img style="top:10vh" id="fbBtn" class="snsButton" src="./images/sns icons/facebookicon.png">
-      </a>
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h2>Techstravaganza 2022</h2>
+          <p>
+            May 14, 2022<br />
+            From 10 am - 4 pm<br />
+            at Thomas Jefferson High School
+          </p>
+          <!-- Display the countdown timer in an element -->
+          <p id="demo"></p>
 
-        <a href="https://www.instagram.com/tj.twist/" target="_blank" title="Instagram">
-        <img style="top:20vh" id="igBtn" class="snsButton" src="./images/sns icons/instagramicon.png">
-      </a>
+          <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("May 22, 2022 10:00:00").getTime();
 
-        <a href="https://twitter.com/TJTechstrav" target="_blank" title="Twitter">
-        <img style="top:30vh" id="twBtn" class="snsButton" src="./images/sns icons/twittericon.png">
-      </a>
-      </div>
-      
-      <!-- Countdown -->
-      <div style="position:relative; width:100%; padding-bottom:75px;background-image:url(./images/ESCbg17.jpg); background-size: 1230px 850px;">
-        <div class="whiteshdw" style="font-size:2.5vw; top:5%; padding-top: 120px">Virtual Edition</div>
-        <div class="whiteshdw" style="font-size:6vw; top:10%;">Techstravaganza 2022</div>
-        <div class="whiteshdw" style="font-size:3vw; top:30%;">May 21, 2022 | 10:00 AM ~ 4:00 PM<br></div>
-        <div class="whiteshdw" style="font-size:2.5vw; top:40%;">Thomas Jefferson High School for Science and Technology</div>
-        
-        <!-- Button to go to Techstrav / change visibility to visible when it's time for techstrav-->
+          // Update the count down every 1 second
+          var x = setInterval(function() {
 
-        <div class = "whiteshdw" style = "padding-top: 15px;"><button style = "visibility: hidden; color: white; background-color: #557283; border-radius: 12px; padding: 15px 32px; font-size: 20px; font-weight: bold"onclick="document.location='./Techstrav/techstrav.html'">Click Here to Attend</button></div>
-        
-       
+          // Get today's date and time
+          var now = new Date().getTime();
 
-        <table cellpadding="2" cellspacing="2" width="100%" class="whiteshdw" style="top:60%; font-size:5vmax;">
-          <col width="25%">
-          <col width="25%">
-          <col width="25%">
-          <col width="25%">
-          <tr>
-            <td id="days"></td>
-            <td id="hours"></td>
-            <td id="mins"></td>
-            <td id="secs"></td>
-          </tr>
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
 
-          <tr>
-            <td style="font-size:2.5vmax; ">Days</td>
-            <td style="font-size:2.5vmax;">Hours</td>
-            <td style="font-size:2.5vmax;">Minutes</td>
-            <td style="font-size:2.5vmax;">Seconds</td>
-          </tr>
-        </table>
-      </div>
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      <!-- Techstrav Information -->
-      <div>
-        <div class="tableheader" style="text-align:center;padding-top:5vh; padding-left:2vw; ">
-          <font size="8vmax">Techstravaganza 2021 Information</font>
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
+          + minutes + "min " + seconds + "sec ";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+          }, 1000);
+        </script>
         </div>
+        <a href="#one" class="more scrolly">Learn More</a>
+      </section>
 
-        <br>
-
-        <div style="margin: 0px 55px;">
-
-          <h3>Overview</h3>
-
-        <p>Techstravaganza 2021 will be hosted synchronously online. The kids will be at home and able to navigate through our website to watch different demonstrations and interact with the exhibitors (Thomas Jefferson HS clubs, Thomas Jefferson HS exhibitors, and external exhibitors). Please keep in mind that our main mission is bringing STEM to low-income communities and a lot of the students participating will be from Title 1 schools.</p>
-
-        <br>
-
-        <h3>Schedule</h3>
-
-        <p>Exhibitors will receive a window on the day where they will demonstrate their 10-minute-activity for FOUR iterations. Each iteration of activities will have a 5 minute break in between to reset your activity and get ready for the next iteration.
-        <br>
-        <br>
-        For an example of what the event schedule will look like, please see the link <a style="color: #b69ef7; text-decoration: underline;" href="https://docs.google.com/spreadsheets/d/1pe0K6wSGBN8DfKJIkz9dzAVosHo1ZGOOEtouI5486_c/edit?usp=sharing" target="_blank">here</a>. There are 3 shifts in the day, and 4 iterations in a shift. Kids will be able to choose among any of the exhibitors in every iteration, resulting in a viewing total of 12 different demos per kid. </p>
-
+      <!-- One -->
+      <section id="one" class="wrapper style1 special">
+        <div class="inner">
+          <header class="major">
+            <h2>Techstravaganza 2022 Information</h2>
+            <h1 id="left">Overview</h1>
+            <p id="left">
+              More information to come.
+            </p>
+            <h1 id="left">Schedule</h1>
+            <p id="left">
+              More information to come.
+            </p>
+          </header>
         </div>
-        
-      </div>
-      
-      <!-- FAQ -->
-      <div style="margin:10px">
-        <table cellpadding="55" width="100%" style="font-size:5vmax; margin:15px;">
-          <colgroup><col width="34%">
-          <col width="37%">
-          <col width="29%">
-          </colgroup><tbody><tr>
-            <td><img src="./images/about.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
-            <td><img src="./images/who.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
-            <td><img src="./images/why.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
-          </tr>
-          <tr class="tableheader">
-            <td>About Techstrav</td>
-            <td>Who Can Attend?</td>
-            <td>Why Come?</td>
-          </tr>
+      </section>
 
-          <tr class="tablecontent">
-            <td>
-              Techstravaganza is a free, open to the public hands-on STEM activity fair that attracts thousands of visitors from the DMV area each year. This past year, we had over 5000 visitors from over 192 different schools.
-              <br><br>Each year, we have over 300 TJ student volunteers and over a dozen exhibiting companies who help us make this event possible.
-            </td>
-            <td>This event is open to children of all ages! However, our labs do specifically target elementary and middle school students.<br><br> Techstravaganza is also a great family event. Not only do the children walk away having learned something new,
-              the parents do to!
-            </td>
-            <td>
-              At Techstravaganza, you will find over 50 different labs and demonstrations that cover a wide range of STEM concepts so there is something for everyone!<br><br> Some of our most popular labs include Banana DNA, Making Ice Cream, and Stomp
-              Rockets!
-            </td>
-          </tr>
-        </tbody></table>
+      <!-- Two -->
+      <section id="three" class="wrapper style3 special">
+        <div class="inner">
+          <ul class="features">
+            <li class="icon solid fa-info">
+              <h3>About Techstrav</h3>
+              <p>
+                Techstravaganza is a free, open to the public hands-on STEM
+                activity fair that attracts thousands of visitors from the DMV
+                area each year. This past year, we had over 5000 visitors from
+                over 192 different schools. Each year, we have over 300 TJ
+                student volunteers and over a dozen exhibiting companies who
+                help us make this event possible.
+              </p>
+            </li>
+            <li class="icon solid fa-people-simple">
+              <h3>Who can attend?</h3>
+              <p>
+                This event is open to children of all ages! However, our labs do
+                specifically target elementary and middle school students.
+                Techstravaganza is also a great family event. Not only do the
+                children walk away having learned something new, the parents do
+                to!
+              </p>
+            </li>
+            <li class="icon fa-solid fa-registered">
+              <h3>Why Register?</h3>
+              <p>
+                By registering, we are able to get a better estimate of how many
+                lab materials to prepare for the day. In addition, this signs
+                you up for our email list so we can send out notifications
+                regarding logistics. We also use EventBrite to check in visitors
+                so this helps speed up the signin process. Tickets are free
+                because we want this event to be accessible to everyone.
+              </p>
+            </li>
 
-        <table cellpadding="55" width="100%" style="font-size:5vmax; padding-top:15px;">
-          <colgroup><col width="32%">
-          <col width="30%">
-          <col width="38%">
-          </colgroup><tbody><tr>
-            <td><img src="./images/organizes.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
-            <td><img src="./images/money.png" title="small-n-flat icons by Paomedia (CC BY 3.0)" class="tableimages"></td>
-            <td rowspan="3">
-              <div style="width:100%; text-align:left;"><iframe src="https://www.eventbrite.com/e/tjhsst-techstravaganza-2021-tickets-133245277211?aff=erelexpmlt" frameborder="0" style="height:78vh;" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+            <li class="icon solid fa-address-card">
+              <h3>Who runs it?</h3>
+              <p>
+                TWIST (Tomorrow's Women in Science and Technology) organizes the
+                event and is a student-run STEM outreach organization at TJHSST.
+                Our mission is to encourage students from diverse and low-income
+                backgrounds to pursue STEM subjects. We aim to increase female
+                enrollment in traditionally underrepresented TJ research labs by
+                empowering girls within our school community to pursue careers
+                in these fields.
+              </p>
+            </li>
+            <li class="icon solid fa-flask">
+              <h3>Why come?</h3>
+              <p>
+                At Techstravaganza, you will find over 50 different labs and
+                demonstrations that cover a wide range of STEM concepts so there
+                is something for everyone! Some of our most popular labs include
+                Banana DNA, Making Ice Cream, and Stomp Rockets!
+              </p>
+            </li>
+            <li class="icon solid fa-flag">
+              <h3>Register</h3>
+              <div style="width:100%; text-align:left;"><iframe src="https://www.eventbrite.com/e/tjhsst-techstravaganza-2022-tickets-158251064193" frameborder="0" style="height:78vh;" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
                 <div style="font-family: 'Work Sans', sans-serif; font-size:1.5vmax; padding:10px 0 5px; margin:2px; width:100%; text-align:left;"><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
                 </div>
               </div>
-            </td>
-          </tr>
-          <tr class="tableheader">
-            <td>Who Runs It?</td>
-            <td>Why Register?</td>
-          </tr>
-          <tr class="tablecontent">
-            <td><a href="/2019Team.html" style="color:#5d5d5e; font-weight:400;">TWIST (Tomorrow's Women in Science and Technology)</a> organizes the event and is a student-run STEM outreach organization at TJHSST. <br><br>Our mission is to encourage students
-              from diverse and low-income backgrounds to pursue STEM subjects. <br><br>We aim to increase female enrollment in traditionally underrepresented TJ research labs by empowering girls within our school community to pursue careers in these fields.</td>
-            <td>By registering, we are able to get a better estimate of how many lab materials to prepare for the day. <br><br>In addition, this signs you up for our email list so we can send out notifications regarding logistics. We also use EventBrite to
-              check in visitors so this helps speed up the signin process. <br><br> Tickets are free because we want this event to be accessible to everyone.</td>
-          </tr>
-        </tbody></table>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-
-      </div>
-      
-      <hr style="color:#e5e5e5;border-top: dotted 3px;height:2px;line-height:0;width:100%;">
-
-      <!-- 2018 Sponsors -->
-      <div>
+      <div class="wrapper alt style2">
         <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
-          <font size="8vmax">2019 Sponsors</font>
+          <h2>2021 Sponsors</h2>
         </div>
 
-        <a href="https://www.fcps.edu/index.php/registration/thomas-jefferson-admissions" target="_blank">
-      <img src="./images/17Sponsor/TJPF.png" class="pastlogos" title="TJ Admissions" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-
         <a href="https://www.tjpartnershipfund.org/" target="_blank">
-      <img src="./images/18Sponsor/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
+          <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>
        
         <a href="https://www.virginia529.com/" target="_blank">
-      <img src="./images/18Sponsor/va529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
+          <img src="./images/Virginia529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>
         
-      <img src="./images/18Sponsor/rose.png" class="pastlogos" title="The Rose Family" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
+        <img src="./images/RoseFamily.png" class="pastlogos" title="The Rose Family" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>
 	    
-      <a href="https://www.nvtc.org/" target="_blank">
-      <img src="./images/18Sponsor/nvtc.png" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-          
+        <a href="https://www.nvtc.org/" target="_blank">
+          <img src="./images/nvtc.jpg" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>    
+        </br>
+        </br>
       </div>
 
-      <hr style="color:#e5e5e5;border-top: dotted 3px;height:2px;line-height:0;width:100%;">
-
-      <!-- 2018 Exhibitors -->
-      <div>
+      <div class = "wrapper alt style2">
         <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
-          <font size="8vmax">2019 Exhibitors</font>
+          <h2>2021 Exhibitors</h2>
         </div>
 
         <a href="https://www.navalengineers.org/" target="_blank">
-      <img src="./images/18Exhib/ASNE.jpg" class="pastlogos" title="American Society Naval Engineers" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/ASNE.jpg" class="pastlogos" title="American Society Naval Engineers" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw; border-bottom: none;">
     </a>
 
         <a href="http://www.booleangirl.org" target="_blank">
-      <img src="./images/18Exhib/Boolean Girl.png" class="pastlogos" title="Boolean Girl" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/BooleanGirl.png" class="pastlogos" title="Boolean Girl" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
 	      
 	<a href="https://www.nvcc.edu/systemic/" target="_blank">
-      <img src="./images/19exhib/NOVA SySTEMic.png" class="pastlogos" title="NOVA SySTEMic" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/NOVA.png" class="pastlogos" title="NOVA SySTEMic" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
 	      
 	<a href="https://xtremevoltage10515.wixsite.com/xtremevoltage10515?fbclid=IwAR2YOKVRqnVA017HiWGnW8STSc4x-2xmdHZhsflJGt0bVMBoPFvXCrNLdCA" target="_blank">
-      <img src="./images/19exhib/XtremeVoltage.png" class="pastlogos" title="Fair Lakes Youth Association - XtremeVoltage" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/XtremeVoltage.png" class="pastlogos" title="Fair Lakes Youth Association - XtremeVoltage" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
 	      
 	<a href="https://www.projectcaelus.org/" target="_blank">
-      <img src="./images/19exhib/caelus.png" class="pastlogos" title="Project Caelus" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/caelus.png" class="pastlogos" title="Project Caelus" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
 	      
 	<a href="http://jackeddielove.wikidot.com/" target="_blank">
-      <img src="./images/18sponsor/jel.png" class="pastlogos" title="JEL Design Studio" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/logo - Jack Love.png" class="pastlogos" title="JEL Design Studio" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
 	      
 	<a href="https://www.fairfaxcounty.gov/publicworks/wastewater" target="_blank">
-      <img src="./images/18sponsor/fcwm.png" class="pastlogos" title="Fairfax County Wastewater Management" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/Wastewater Logo Color with Text White BG 2019 - Melissa M Atwood.png" class="pastlogos" title="Fairfax County Wastewater Management" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
 	      
         <a href="https://www.gscnc.org/en/about-girl-scouts/our-program/highest-awards/silver-award.html" target="_blank">
-      <img src="./images/18sponsor/girlscouts.png" class="pastlogos" title="Girl Scouts Council of the Nation's Capitol Silver Award Project" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+      <img src="./images/8b61556ca22043d467527f1f6afa4e18 - Theresa Wills.png" class="pastlogos" title="Girl Scouts Council of the Nation's Capitol Silver Award Project" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
         
       </div>
 
-      <hr style="color:#e5e5e5;border-top: dotted 3px;height:2px;line-height:0;width:100%;">
-
       <!-- Google Maps & Contact -->
-      <table style="padding-top:15vh; width:100%">
-        <colgroup><col width="55%">
-        <col width="45%">
-        </colgroup><tbody><tr>
-          <td>
-            <div style="padding-bottom:4vh;">
-              <img src="./images/where.png" class="tableimages" title="small-n-flat icons by Paomedia (CC BY 3.0)" style="float:left; margin-right:1vw; margin-left:3vw">
-              <div class="tableheader" style="font-size:4vw;line-height:7vw;">WHERE</div>
-            </div>
+      <div class = "wrapper style1 special">
+        <div class = "wrapper style1 special float-container">
 
+          <div class="float-child">
+            <h2 class = "fas fa-map-marked-alt fa-2x">WHERE</h2>
             <iframe width="100%" frameborder="10" style="height:65vh; border-radius:15px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJleh3KOCyt4kRq7zT9EpWL8E&amp;key=AIzaSyA7npBluaABZS9BTs6y2Sf1JKEic4iYR4k" allowfullscreen=""></iframe>
-          </td>
-
-          <td>
-            <div style="padding-bottom:3vh;">
-              <img src="./images/17Exhib/contact.png" class="tableimages" title="small-n-flat icons by Paomedia (CC BY 3.0)" style="float:left; margin-right:1vw;">
-              <div class="tableheader" style="font-size:4vw;line-height:7vw;">CONTACT</div>
-            </div>
-            <div style="opacity:0.8;background-image:url('./images/contactbg2.jpg'); background-size:100%; background-repeat:no-repeat; background-position:center; width:100%; height:65vh; border-radius:15px;">
-              <div class="whiteshdwsmall" style="margin-top:10vh;">
+          </div>
+          
+          <div class="float-child">
+            <h2 class="fas fa-comment-alt fa-2x">CONTACT</h2>
+            <div style="opacity:0.9;background-image:url('./images/contactbg2.jpg'); background-size:100%; background-repeat:no-repeat;  width:100%; height:65vh; border-radius:15px;">
+              <div>
                 <table>
                   <colgroup><col span="100%">
                   </colgroup><tbody><tr>
                     <td>
-                      <img src="./images/email.png" title="Shoot Us An Email!" style="padding-left:0.5vw;float:left; margin-right:1vw; width:auto; height:3.5vw;">
-                      <div style=" width:85%;font-size:1.6vw; color:white; font-weight:800; text-align:left; line-height:3vw;">twistcoordinators@gmail.com<br></div>
+                      <div class="fas fa-envelope fa-lg" style="width:85%;font-size:1.6vw; color:white; font-weight:800; text-align:left; line-height:3vw;"> twistcoordinators@gmail.com<br></div>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <img src="./images/mail.png" title="Send Mail Here Addresed to TJ TWIST" style="padding-left:0.5vw;float:left; margin-right:1vw; width:auto; height:3.5vw;margin-top:1.5vh;">
-                      <div style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;">6560 Braddock Road, Alexandria, VA 22312</div>
+                      <div class="fas fa-map-pin fa-lg" style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"> 6560 Braddock Road, Alexandria, VA 22312</div>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <img src="./images/fb.png" title="PM Us on Facebook!" style="padding-left:0.5vw;float:left; margin-right:1vw; width:auto; height:3.5vw;margin-top:1.5vh;">
-                      <div style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"><a href="https://www.facebook.com/TJTechstrav/">@TJTechstrav</a></div>
+                      <div class="fab fa-facebook-square fa-lg" style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"><a href="https://www.facebook.com/TJTechstrav/"> @TJTechstrav</a></div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="fab fa-instagram fa-lg" style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"><a href="https://www.facebook.com/TJTechstrav/"> @tj.twist</a></div>
                     </td>
                   </tr>
                 </tbody></table>
 
               </div>
             </div>
-          </td>
-        </tr>
-      </tbody></table>
+          </div>
 
-      <!-- Back to Top Button -->
-      <button onclick="topFunction()" id="myBtn" title="Back to Top" style="display: block;"></button>
+        </div>
+      </div>
+
+      <div class = "wrapper style1 special" style = "text-align: center;">
+        </br>
+        <p>To contact us directly, please go to the "Contact Us" section!</p>
+      </div>
 
 
       <!-- Footer -->
-      <div id="footer" style="font-size:12px;">
-        <i>Organized and Owned by TJ TWIST</i>
-        <br>
+      <div>
+        <footer id="footer">
+          <ul class="copyright">
+            <li>Organized and Owned By TJ TWIST</li>
+            <li>Design: HTML5 UP</li>
+          </ul>
+        </footer>
       </div>
-      <br>
-      <br>
 
-      <script>
-        var countDownDate = new Date("May 22, 2022 10:00:00").getTime();
-
-        var x = setInterval(function() {
-          var now = new Date().getTime();
-          var distance = countDownDate - now;
-
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          document.getElementById("days").innerHTML = days;
-          document.getElementById("hours").innerHTML = hours;
-          document.getElementById("mins").innerHTML = minutes;
-          document.getElementById("secs").innerHTML = seconds;
-
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-      </script>
-
-      <script>
-        $(window).load(function(e) {
-          $(".overlay").fadeOut(2000);
-        });
-      </script>
-
-      <!-- Back to Top Function -->
-      <script>
-        // When the user scrolls down 10px from the top of the document, show the button
-        window.onscroll = function() {
-          scrollFunction()
-        };
-
-        function scrollFunction() {
-          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-            document.getElementById("myBtn").style.display = "block";
-          }
-          else {
-            document.getElementById("myBtn").style.display = "none";
-          }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-
-  
-
-  
- 
-</div>
- 
-</body></html>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
