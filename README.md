@@ -1,2 +1,2 @@
-# TJTechstrav-website
+# TJ Techstrav website
 TJ Techstravaganza website
