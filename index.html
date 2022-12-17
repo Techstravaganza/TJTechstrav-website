@@ -6,22 +6,24 @@
 -->
 <html>
   <head>
-    <title>Elements - Spectral by HTML5 UP</title>
+    <title>Techstravaganza 2023</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
   </head>
-  <body class="is-preload">
+  <body class="landing is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
       <!-- Header -->
-      <header id="header">
+      <header id="header" class="alt">
         <h1><a href="index.html">Techstravaganza 2023</a></h1>
         <nav id="nav">
           <ul>
@@ -41,283 +43,299 @@
         </nav>
       </header>
 
-      <!-- Main -->
-      <article id="main">
-        <header>
-          <h2>Meet Our Team</h2>
-          <p>TJ Techstravaganza Team for 2023</p>
-        </header>
-        <section class="wrapper style5">
-          <div class="inner">
-            <section>
-              <h2>Tanvi Bhave</h2>
-              <h4>Co-President</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Tanvi Bhave.jpeg" style="width:200px; height:auto"/></span
-                >Tanvi is a senior and has been coming to TWIST for the past three years. 
-                This is her second year as an officer of the club. 
-                In her free time she loves listening to music, running, and playing basketball.</br></br>
-                <b>Favorite artist:</b> Billie Eilish</br>
-                <b>Favorite ice cream:</b> Coconut</br>
-                <b>Favorite food:</b> Hashbrowns</br>
-                <b>Favorite youtuber:</b> Emma Chamberlain</br></br>
-              </p>
-              
-              <h2>Sophia Li</h2>
-              <h4>Co-President</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Sophia Li.jpg" style="width:200px; height:auto"/></span
-                >Sophia is a senior who joined TWIST three years ago and is excited to be plan Techstrav! 
-                She loves music, volleyball, f1, and reading.</br></br>
-                <b>Favorite season:</b> Fall</br>
-                <b>Favorite artist:</b> BTS</br>
-                <b>Favorite color:</b> Green</br>
-                <b>Favorite book:</b> Six of Crows</br></br>
-              </p>
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h2>Techstravaganza 2023</h2>
+          <p>
+            Saturday, May 13, 2023<br />
+            From 10 am - 4 pm<br />
+            at Thomas Jefferson High School for Science and Technology
+          </p>
+          <!-- Display the countdown timer in an element -->
+          <p id="demo"></p>
 
-              <h2>Valentina Hong</h2>
-              <h4>Publicist</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Valentina Hong.jpg" style="width:200px; height:auto"/></span
-                >Valentina is a senior and is excited to plan Techstrav this year! 
-                In her free time, she loves listening to music, bullet journaling, and hanging out with friends.</br></br>
-                <b>Favorite Candy:</b> KitKats </br>
-                <b>Favorite Color:</b> Sage Green</br>
-                <b>Favorite Drink:</b> Taro Bubble Tea </br>
-                <b>Favorite Season:</b> Fall </br></br>
-              </p>
+          <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("May 13, 2023 10:00:00").getTime();
 
-              <h2>Rebecca Hsieh</h2>
-              <h4>Treasurer</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Rebecca Hsieh.png" style="width:200px; height:auto"/></span
-                >Rebecca is a senior who has been a part of the Techstrav team for 3 years. 
-                She loves to fence, watch football, and read. </br></br>
-                <b>Favorite football team:</b> New England Patriots</br>
-                <b>Favorite song:</b> Red Lights by Stray Kids</br>
-                <b>Favorite novel:</b> Omniscient Reader's Viewpoint</br>
-                <b>Favorite food:</b> Taiwanese popcorn chicken</br></br>
-              </p>
+          // Update the count down every 1 second
+          var x = setInterval(function() {
 
-              <h2>Serenna Semonsen</h2>
-              <h4>Treasurer-in-Training</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Serenna Semonsen.jpg" style="width:200px; height:auto"/></span
-                >Serenna is a junior and is delighted to start her second year on the Techstrav team. 
-                In her free time, she likes playing the violin and discovering new music. 
-                Serenna has been a part of the track and field team since freshman year. 
-                She also loves traveling around the world and trying out new activities. </br></br>
-                <b>Favorite Subject:</b> Chemistry</br>
-                <b>Favorite Book:</b> All The Light We Cannot See</br>
-                <b>Favorite Animal:</b> Ferret</br>
-                <b>Favorite Holiday:</b> Christmas</br></br>
-              </p>
+          // Get today's date and time
+          var now = new Date().getTime();
 
-              <h2>Catherine Jeon</h2>
-              <h4>Activities Coordinator</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Catherine Jeon.jpg" style="width:200px; height:auto"/></span
-                >Catherine is a junior interested in STEM and excited for Techstrav! 
-                She likes to read, debate, and listen to music. </br></br>
-                <b>Favorite author:</b> Marie Lu</br>
-                <b>Favorite sport:</b> Taekwondo</br>
-                <b>Favorite music:</b> Nostalgic 2010s pop</br>
-                <b>Favorite candy:</b> Sour worms</br></br>
-              </p>
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
 
-              <h2>Karli Torres Hinojosa</h2>
-              <h4>Secretary</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Karli Torres Hinojosa.jpeg" style="width:200px; height:auto"/></span
-                >Karli is a junior who joined TWIST two years ago and is excited to be an officer! 
-                She loves baking, collecting stuffed animals, and hanging out with friends. </br></br>
-                <b>Favorite movie:</b> Inception</br>
-                <b>Favorite drink:</b> Boba tea</br>
-                <b>Favorite animal:</b> Hedgehog</br>
-                <b>Favorite color:</b> Cornflower blue</br></br>
-              </p>
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-              <h2>Mahika Banerjee</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Mahika Banerjee.png" style="width:200px; height:auto"/></span
-                >Mahika is a sophomore and has been a part of TWIST since their freshman year! 
-                In their free time, they enjoy going on walks with their dog, spending time with their friends, journaling, and listening to music! </br></br>
-                <b>Favorite sport:</b> Volleyball</br>
-                <b>Favorite season:</b> Summer</br>
-                <b>Favorite candy:</b> Trolli gummy worms</br>
-                <b>Favorite show:</b> Arrested Development</br></br>
-              </p>
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
+          + minutes + "min " + seconds + "sec ";
 
-              <h2>Sanchali Banerjee</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Sanchali Banerjee.jpg" style="width:200px; height:auto"/></span
-                >Sanchali is a sophomore who is excited for her second year on the Techstrav team! 
-                She likes to read, play the piano, and doodle.</br></br>
-                <b>Favorite color:</b> Purple</br>
-                <b>Favorite animal:</b> Panda</br>
-                <b>Favorite food:</b> Sushi</br>
-                <b>Favorite book:</b> The Mysterious Benedict Society</br></br>
-              </p>
-              
-              <h2>Sabrina Hsieh</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Sabrina Hsieh.png" style="width:200px; height:auto"/></span
-                >Sabrina is a junior and is excited to be part of Techstrav this year. 
-                She likes to fence, watch sports, and try new foods.</br></br>
-                <b>Favorite color:</b> Purple</br>
-                <b>Favorite vacation spot:</b> Taiwan</br>
-                <b>Favorite food:</b> Sushi</br>
-                <b>Favorite season:</b> Fall</br></br>
-              </p>
+          // If the count down is finished, write some text
+          if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+          }, 1000);
+        </script>
+        </div>
+        <a href="#one" class="more scrolly">Learn More</a>
+      </section>
 
-              <h2>Lindsay Hwang</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Lindsay Hwang.jpg" style="width:200px; height:auto"/></span
-                >Lindsay is a junior and this is her second year on the Techstrav team! 
-                She loves listening to music, playing lacrosse, and running. </br></br>
-                <b>Favorite artist:</b> Taylor Swift</br>
-                <b>Favorite Starbucks drink:</b> Peppermint mocha</br>
-                <b>Favorite sport:</b> Lacrosse</br></br>
-              </p>
+      <!-- One -->
+      <section id="one" class="wrapper style1 special">
+        <div class="inner">
+          <header class="major">
+            <h2>Techstravaganza 2023 Information</h2>
+            <h1 id="left">Overview</h1>
+            <p id="left">
+              From hands-on activities to mind-blowing demonstrations, Techstravaganza inspires students to explore their passion for STEM. Past Techstravaganza exhibitors include Robotics for Youth, JEL Design Studios, and the American Society for Naval Engineers. This is a self-paced event, so students are free to visit whichever booths interest them! Students can look forward to raffles, merchandise, and goodie bags.
+            </p>
+            <h1 id="left">Schedule</h1>
+            <p id="left">
+              Techstravaganza will take place on Saturday, May 13, 2023, from 10AM - 4PM at Thomas Jefferson High School for Science and Technology, located at 6560 Braddock Rd, Alexandria, VA 22312. For Title I elementary school students, lunch will be offered from 12PM - 1PM in the cafeteria, and transportation details will be communicated with the school contact. Otherwise, the time is yours to embark on your personalized STEM journey!
+            </p>
+          </header>
+        </div>
+      </section>
 
-              <h2>Esha Jain</h2>
-              <h4>Techstravaganza Supervisor</h4>
+      <!-- Two -->
+      <section id="three" class="wrapper style3 special">
+        <div class="inner">
+          <ul class="features">
+            <li class="icon solid fa-info">
+              <h3>About Techstrav</h3>
               <p>
-                <span class="image left"
-                  ><img src="images/pfp - Esha Jain.jpeg" style="width:200px; height:auto"/></span
-                >Esha is a junior and this is her first year on the Techstrav team! 
-                She loves to read, play lacrosse, and listen to music.  </br></br>
-                <b>Favorite color:</b> Lavender</br>
-                <b>Favorite season:</b> Spring</br>
-                <b>Favorite dessert:</b> Brownies</br></br>
+                Techstravaganza is a free, hands-on STEM activity fair open to
+		the public, attracting thousands of visitors from the DMV
+                area each year. This past year, we had over 5000 visitors from
+                over 192 different schools. Each year, we have over 300 TJ
+                student volunteers and over a dozen exhibiting companies who
+                help us make this event possible.
               </p>
+            </li>
+            <li class="icon solid fa-people-simple">
+              <h3>Who can attend?</h3>
+              <p>
+                This event is open to children of all ages! However, our labs do
+                specifically target elementary and middle school students.
+                Techstravaganza is also a great family event. Not only do the
+                children walk away having learned something new, the parents do
+                too!
+              </p>
+            </li>
+            <li class="icon fa-solid fa-registered">
+              <h3>Why Register?</h3>
+              <p>
+                By registering, we are able to get a better estimate of how many
+                lab materials to prepare for the day. In addition, this signs
+                you up for our email list so we can send out notifications
+                regarding logistics. We also use EventBrite to check in visitors
+                so this helps speed up the sign-in process. Lastly, we want this
+		event to be accessible to everyone, so tickets are free!
+              </p>
+            </li>
 
-              <h2>Jasmine Ma</h2>
-              <h4>Techstravaganza Supervisor</h4>
+            <li class="icon solid fa-address-card">
+              <h3>Who runs it?</h3>
               <p>
-                <span class="image left"
-                  ><img src="images/pfp - Jasmine Ma.jpg" style="width:200px; height:auto"/>
-                <b>Favorite song genre:</b> Classical jazz</br>
-                <b>Favorite city:</b> Kailua</br>
-                <b>Favorite season:</b> Summer</br>
-                <b>Favorite activity:</b> Dance!</br></br>
+                TWIST (Tomorrow's Women in Science and Technology) organizes the
+                event and is a student-run STEM outreach organization at TJHSST.
+                Our mission is to encourage students from diverse and low-income
+                backgrounds to pursue STEM subjects. We aim to increase female
+                enrollment in traditionally underrepresented TJ research labs by
+                empowering girls within our school community to pursue careers
+                in these fields.
               </p>
+            </li>
+            <li class="icon solid fa-flask">
+              <h3>Why come?</h3>
+              <p>
+                At Techstravaganza, you will find over 50 different labs and
+                demonstrations that cover a wide range of STEM concepts so there
+                is something for everyone! Some of our most popular labs include
+                Banana DNA, Making Ice Cream, and Stomp Rockets!
+              </p>
+            </li>
+            <li class="icon solid fa-flag">
+              <h3>Register</h3>
+              <div style="width:100%; text-align:left;"><iframe src="https://www.eventbrite.com/e/tjhsst-techstravaganza-2023-tickets-465757552377" frameborder="0" style="height:78vh;" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                <div style="font-family: 'Work Sans', sans-serif; font-size:1.5vmax; padding:10px 0 5px; margin:2px; width:100%; text-align:left;"><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-              <h2>Poorna Prakash</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Poorna Prakash.png" style="width:200px; height:auto"/></span
-                >Poorna is a sophomore and has been a member of TWIST since her freshmen year! 
-                She is extremely excited to spread her love of STEM with others and work to create an amazing experience at Techstrav this year. 
-                In her free time, you can find her listening to music, spending time with friends, or volunteering! </br></br>
-                <b>Favorite band:</b> One Direction</br>
-                <b>Favorite ice cream:</b> Cotton candy</br>
-                <b>Favorite sport:</b> Basketball</br>
-                <b>Hogwarts house:</b> Hufflepuff</br></br>
-              </p>
+      <div class="wrapper alt style2">
+        <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
+          <h2>2021 Sponsors</h2>
+        </div>
 
-              <h2>Jay Rajukar</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Jay Rajurkar.jpg" style="width:200px; height:auto"/></span
-                >I'm a senior who is excited to help out Techstrav this year. 
-                I like to play basketball, videogames, and chess in my free time.</br></br>
-                <b>Favorite basketball team:</b> Boston Celtics</br>
-                <b>Favorite book:</b> Phantom tollbooth</br>
-                <b>Favorite artist:</b> Drake</br></br>
-              </p>
+        <a href="https://www.tjpartnershipfund.org/" target="_blank">
+          <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>
+       
+        <a href="https://www.virginia529.com/" target="_blank">
+          <img src="./images/Virginia529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>
+        
+        <img src="./images/RoseFamily.png" class="pastlogos" title="The Rose Family" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>
+	    
+        <a href="https://www.nvtc.org/" target="_blank">
+          <img src="./images/nvtc.jpg" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+        </a>    
+        </br>
+        </br>
+      </div>
 
-              <h2>Sidd Rangavajjula</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Sidd Rangavajjula.png" style="width:200px; height:auto"/>
-                <b>Favorite artists:</b> Sleepy Hallow, Travis Scott, & Lil Tjay</br>
-                <b>Favorite color:</b> YInMn blue</br>
-                <b>Favorite manhwa:</b> Tower of God</br>
-                <b>Favorite animal:</b> Baboon</br></br>
-              </p>
+      <!--
+      <div class = "wrapper style2" style="padding-top: 10px;padding-bottom: 10px;">
+        <div class = "tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
+          <h2>2021 Sponsors</h2>
+        </div>
+        <table>
+            <tr style = "border:none;">
+              <td>
+                <a href="https://www.tjpartnershipfund.org/" target="_blank">
+                <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+                </a>
+                <p style = "width:375px; padding-left: 15px;">Description description description description description description description</p>
+              </td>
+              <td>
+                <a href="https://www.virginia529.com/" target="_blank">
+                  <img src="./images/Virginia529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+                </a>
+                <p style = "width:500px; padding-left: 15px;">Description description description description description description description</p>
+              </td>
+              <td>
+                <a href="https://www.nvtc.org/" target="_blank">
+                  <img src="./images/nvtc.jpg" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+                </a>
+                <p style = "width:250px; padding-left: 15px;">Description description description description description description description</p>
+              </td>
+            </tr>
+            <tr style = "border:none;">
+              <td>
+                <a href="https://www.tjpartnershipfund.org/" target="_blank">
+                <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+                </a>
+                <p style = "width:375px; padding-left: 15px;">Description description description description description description description</p>
+              </td>
+            </tr>
+        </table>
+      </div>
+    -->
+      <div class = "wrapper alt style2">
+        <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
+          <h2>2021 Exhibitors</h2>
+        </div>
 
-              <h2>Megan Sawant</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Megan Sawant.png" style="width:200px; height:auto"/></span
-                >Megan is a sophomore interested in STEM outreach and this is her first year on the Techstrav team! 
-                She loves chemistry, writing, listening to music, and spending time with her friends. </br></br>
-                <b>Favorite show:</b> Manifest</br>
-                <b>Favorite color:</b> Lavender periwinkle</br>
-                <b>Favorite candy:</b> Gummy bears</br>
-                <b>Favorite season:</b> Summer</br></br>
-              </p>
+        <a href="https://www.navalengineers.org/" target="_blank">
+      <img src="./images/ASNE.jpg" class="pastlogos" title="American Society Naval Engineers" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw; border-bottom: none;">
+    </a>
 
-              <h2>Anukrit Sharma</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Anukrit Sharma.png" style="width:200px; height:auto"/></span
-                >Anukrit is a junior, and this will be his first year on the Techstrav team! 
-                In his free time, he enjoys playing videogames, soccer, working on cars, and spending time with his friends.</br></br>
-                <b>Favorite soccer team:</b> Arsenal (Premier League)</br>
-                <b>Favorite food:</b> French fries</br>
-                <b>Favorite artist:</b> Coldplay</br>
-                <b>Favorite car:</b> Nissan 350z</br></br>
-              </p>
+        <a href="http://www.booleangirl.org" target="_blank">
+      <img src="./images/BooleanGirl.png" class="pastlogos" title="Boolean Girl" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+    </a>
+	      
+	<a href="https://www.nvcc.edu/systemic/" target="_blank">
+      <img src="./images/NOVA.png" class="pastlogos" title="NOVA SySTEMic" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+    </a>
+	      
+	<a href="https://xtremevoltage10515.wixsite.com/xtremevoltage10515?fbclid=IwAR2YOKVRqnVA017HiWGnW8STSc4x-2xmdHZhsflJGt0bVMBoPFvXCrNLdCA" target="_blank">
+      <img src="./images/XtremeVoltage.png" class="pastlogos" title="Fair Lakes Youth Association - XtremeVoltage" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+    </a>
+	      
+	<a href="https://www.projectcaelus.org/" target="_blank">
+      <img src="./images/caelus.png" class="pastlogos" title="Project Caelus" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+    </a>
+	      
+	<a href="http://jackeddielove.wikidot.com/" target="_blank">
+      <img src="./images/logo - Jack Love.png" class="pastlogos" title="JEL Design Studio" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+    </a>
+	      
+	<a href="https://www.fairfaxcounty.gov/publicworks/wastewater" target="_blank">
+      <img src="./images/Wastewater Logo Color with Text White BG 2019 - Melissa M Atwood.png" class="pastlogos" title="Fairfax County Wastewater Management" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+    </a>
+	      
+        <a href="https://www.gscnc.org/en/about-girl-scouts/our-program/highest-awards/silver-award.html" target="_blank">
+      <img src="./images/8b61556ca22043d467527f1f6afa4e18 - Theresa Wills.png" class="pastlogos" title="Girl Scouts Council of the Nation's Capitol Silver Award Project" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+    </a>
+        
+      </div>
 
-              <h2>Shahzad Sohail</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Shahzad Sohail.jpeg" style="width:200px; height:auto"/></span
-                >Shahzad is a senior and has been on the Techstrav team for the past two years. 
-                In his free time, he likes to play sports with friends or play with his cat, George.       </br></br>
-                <b>Favorite sport</b> Football</br>
-                <b>Favorite season:</b> Spring</br>
-                <b>Favorite drink:</b> Arnold Palmer</br></br>
-              </p>
-              
-              <h2>Suraj Vaddi</h2>
-              <h4>Techstravaganza Supervisor</h4>
-              <p>
-                <span class="image left"
-                  ><img src="images/pfp - Suraj Vaddi.jpeg" style="width:200px; height:auto"/></span
-                >Suraj is a senior and is super excited to work on the Techstrav team this year. 
-                He is passionate about expanding science education and working with younger students. </br></br>
-                <b>Favorite candy</b> KitKats</br>
-                <b>Favorite place:</b> The beach</br>
-                <b>Favorite football team:</b> The Eagles</br>
-                <b>Favorite color:</b> Color</br></br>
-              </p>
-            </section>
+      <!-- Google Maps & Contact -->
+      <div class = "wrapper style1 special">
+        <div class = "wrapper style1 special float-container">
+
+          <div class="float-child">
+            <h2 class = "fas fa-map-marked-alt fa-2x">WHERE</h2>
+            <iframe width="100%" frameborder="10" style="height:65vh; border-radius:15px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJleh3KOCyt4kRq7zT9EpWL8E&amp;key=AIzaSyA7npBluaABZS9BTs6y2Sf1JKEic4iYR4k" allowfullscreen=""></iframe>
           </div>
-        </section>
-      </article>
+          
+          <div class="float-child">
+            <h2 class="fas fa-comment-alt fa-2x">CONTACT</h2>
+            <div style="opacity:0.9;background-image:url('./images/contactbg2.jpg'); background-size:100%; background-repeat:no-repeat;  width:100%; height:65vh; border-radius:15px;">
+              <div>
+                <table>
+                  <colgroup><col span="100%">
+                  </colgroup><tbody><tr>
+                    <td>
+                      <div class="fas fa-envelope fa-lg" style="width:85%;font-size:1.6vw; color:white; font-weight:800; text-align:left; line-height:3vw;"> twistcoordinators@gmail.com<br></div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="fas fa-map-pin fa-lg" style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"> 6560 Braddock Road, Alexandria, VA 22312</div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="fab fa-facebook-square fa-lg" style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"><a href="https://www.facebook.com/TJTechstrav/"> @TJTechstrav</a></div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="fab fa-instagram fa-lg" style="width:85%;font-size:1.7vw; color:white; font-weight:800; text-align:left; line-height:3vw; word-wrap:break-word;margin-top:1.5vh;"><a href="https://www.facebook.com/TJTechstrav/"> @tj.twist</a></div>
+                    </td>
+                  </tr>
+                </tbody></table>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class = "wrapper style1 special" style = "text-align: center;">
+        </br>
+        <p>To contact us directly, please go to the "Contact Us" section!</p>
+      </div>
+
 
       <!-- Footer -->
-      <footer id="footer">
-        <ul class="copyright">
-          <li>Organized and Owned By TJ TWIST</li>
-          <li>Design: HTML5 UP</li>
-        </ul>
-      </footer>
-    </div>
+      <div>
+        <footer id="footer">
+          <ul class="copyright">
+            <li>Organized and Owned By TJ TWIST</li>
+            <li>Design: HTML5 UP</li>
+          </ul>
+        </footer>
+      </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
