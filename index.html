@@ -1,393 +1,391 @@
 <!DOCTYPE html>
 <!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Spectral by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-  <head>
+<head>
     <title>Techstravaganza 2023</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="landing is-preload">
+
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+<body class="landing is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <h1><a href="index.html">Techstravaganza 2023</a></h1>
-        <nav id="nav">
-          <ul>
-            <li class="special">
-              <a href="#menu" class="menuToggle"><span>Menu</span></a>
-              <div id="menu">
+        <!-- Header -->
+        <header id="header" class="alt">
+            <h1><a href="index.html">Techstravaganza 2023</a></h1>
+            <nav id="nav">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="meetTeam.html">Meet Our Team</a></li>
-                  <li><a href="photos.html">Photos</a></li>
-                  <li><a href="donate.html">Donate</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="meetTeam.html">Meet Our Team</a></li>
+                                <li><a href="photos.html">Photos</a></li>
+                                <li><a href="donate.html">Donate</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </header>
+            </nav>
+        </header>
 
-      <!-- Banner -->
-      <section id="banner">
-        <div class="inner">
-          <h2>Techstravaganza 2023</h2>
-          <p>
-            Saturday, May 13, 2023<br />
-            From 10 am - 4 pm<br />
-            at Thomas Jefferson High School for Science and Technology
-          </p>
-          <!-- Display the countdown timer in an element -->
-          <p id="demo"></p>
+        <!-- Banner -->
+        <section id="banner">
+            <div class="inner">
+                <h2>Techstravaganza 2023</h2>
+                <p>
+                    Saturday, May 13, 2023<br />
+                    From 10 am - 4 pm<br />
+                    at Thomas Jefferson High School for Science and Technology
+                </p>
+                <!-- Display the countdown timer in an element -->
+                <p id="demo"></p>
 
-          <script>
-          // Set the date we're counting down to
-          var countDownDate = new Date("May 13, 2023 10:00:00").getTime();
+                <script>// Set the date we're counting down to
+                    var countDownDate = new Date("May 13, 2023 10:00:00").getTime();
 
-          // Update the count down every 1 second
-          var x = setInterval(function() {
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
 
-          // Get today's date and time
-          var now = new Date().getTime();
+                        // Get today's date and time
+                        var now = new Date().getTime();
 
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
 
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-          // Display the result in the element with id="demo"
-          document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
-          + minutes + "min " + seconds + "sec ";
+                        // Display the result in the element with id="demo"
+                        document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
+                            + minutes + "min " + seconds + "sec ";
 
-          // If the count down is finished, write some text
-          if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-          }, 1000);
-        </script>
-        </div>
-        <a href="#one" class="more scrolly">Learn More</a>
-      </section>
+                        // If the count down is finished, write some text
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);</script>
+            </div>
+            <a href="#one" class="more scrolly">Learn More</a>
+        </section>
 
-      <!-- One -->
-      <section id="one" class="wrapper style1 special">
-        <div class="inner">
-          <header class="major">
-            <h2>Techstravaganza 2023 Information</h2>
-            <h1 id="left">Overview</h1>
-            <p id="left">
-              From hands-on activities to mind-blowing demonstrations, Techstravaganza inspires students to explore their passion for STEM. Past Techstravaganza exhibitors include Robotics for Youth, JEL Design Studios, and the American Society for Naval Engineers. This is a self-paced event, so students are free to visit whichever booths interest them! Students can look forward to raffles, merchandise, and goodie bags.
-            </p>
-            <h1 id="left">Schedule</h1>
-            <p id="left">
-              Techstravaganza will take place on Saturday, May 13, 2023, from 10AM - 4PM at Thomas Jefferson High School for Science and Technology, located at 6560 Braddock Rd, Alexandria, VA 22312. For Title I elementary school students, lunch will be offered from 12PM - 1PM in the cafeteria, and transportation details will be communicated with the school contact. Otherwise, the time is yours to embark on your personalized STEM journey!
-            </p>
-          </header>
-        </div>
-      </section>
+        <!-- One -->
+        <section id="one" class="wrapper style1 special">
+            <div class="inner">
+                <header class="major">
+                    <h2>Techstravaganza 2023 Information</h2>
+                    <h1 id="left">Overview</h1>
+                    <p id="left">
+                        From hands-on activities to mind-blowing demonstrations, Techstravaganza inspires students to explore their passion for STEM. Past Techstravaganza exhibitors include Robotics for Youth, JEL Design Studios, and the American Society for Naval Engineers. This is a self-paced event, so students are free to visit whichever booths interest them! Students can look forward to raffles, merchandise, and goodie bags.
+                    </p>
+                    <h1 id="left">Schedule</h1>
+                    <p id="left">
+                        Techstravaganza will take place on Saturday, May 13, 2023, from 10AM - 4PM at Thomas Jefferson High School for Science and Technology, located at 6560 Braddock Rd, Alexandria, VA 22312. For Title I elementary school students, lunch will be offered from 12PM - 1PM in the cafeteria, and transportation details will be communicated with the school contact. Otherwise, the time is yours to embark on your personalized STEM journey!
+                    </p>
+                </header>
+            </div>
+        </section>
 
-      <!-- Two -->
-      <section id="three" class="wrapper style3 special">
-        <div class="inner">
-          <ul class="features">
-            <li class="icon solid fa-info">
-              <h3>About Techstrav</h3>
-              <p>
-                Techstravaganza is a free, hands-on STEM activity fair open to
-		the public, attracting thousands of visitors from the DMV
-                area each year. This past year, we had over 5000 visitors from
-                over 192 different schools. Each year, we have over 300 TJ
-                student volunteers and over a dozen exhibiting companies who
-                help us make this event possible.
-              </p>
-            </li>
-            <li class="icon solid fa-people-simple">
-              <h3>Who can attend?</h3>
-              <p>
-                This event is open to children of all ages! However, our labs do
-                specifically target elementary and middle school students.
-                Techstravaganza is also a great family event. Not only do the
-                children walk away having learned something new, the parents do
-                too!
-              </p>
-            </li>
-            <li class="icon fa-solid fa-registered">
-              <h3>Why Register?</h3>
-              <p>
-                By registering, we are able to get a better estimate of how many
-                lab materials to prepare for the day. In addition, this signs
-                you up for our email list so we can send out notifications
-                regarding logistics. We also use EventBrite to check in visitors
-                so this helps speed up the sign-in process. Lastly, we want this
-		event to be accessible to everyone, so tickets are free!
-              </p>
-            </li>
+        <!-- Two -->
+        <section id="three" class="wrapper style3 special">
+            <div class="inner">
+                <ul class="features">
+                    <li class="icon solid fa-info">
+                        <h3>About Techstrav</h3>
+                        <p>
+                            Techstravaganza is a free, hands-on STEM activity fair open to
+                            the public, attracting thousands of visitors from the DMV
+                            area each year. This past year, we had over 5000 visitors from
+                            over 192 different schools. Each year, we have over 300 TJ
+                            student volunteers and over a dozen exhibiting companies who
+                            help us make this event possible.
+                        </p>
+                    </li>
+                    <li class="icon solid fa-people-simple">
+                        <h3>Who can attend?</h3>
+                        <p>
+                            This event is open to children of all ages! However, our labs do
+                            specifically target elementary and middle school students.
+                            Techstravaganza is also a great family event. Not only do the
+                            children walk away having learned something new, the parents do
+                            too!
+                        </p>
+                    </li>
+                    <li class="icon fa-solid fa-registered">
+                        <h3>Why Register?</h3>
+                        <p>
+                            By registering, we are able to get a better estimate of how many
+                            lab materials to prepare for the day. In addition, this signs
+                            you up for our email list so we can send out notifications
+                            regarding logistics. We also use EventBrite to check in visitors
+                            so this helps speed up the sign-in process. Lastly, we want this
+                            event to be accessible to everyone, so tickets are free!
+                        </p>
+                    </li>
 
-            <li class="icon solid fa-address-card">
-              <h3>Who runs it?</h3>
-              <p>
-                TWIST (Tomorrow's Women in Science and Technology) organizes the
-                event and is a student-run STEM outreach organization at TJHSST.
-                Our mission is to encourage students from diverse and low-income
-                backgrounds to pursue STEM subjects. We aim to increase female
-                enrollment in traditionally underrepresented TJ research labs by
-                empowering girls within our school community to pursue careers
-                in these fields.
-              </p>
-            </li>
-            <li class="icon solid fa-flask">
-              <h3>Why come?</h3>
-              <p>
-                At Techstravaganza, you will find over 50 different labs and
-                demonstrations that cover a wide range of STEM concepts so there
-                is something for everyone! Some of our most popular labs include
-                Banana DNA, Making Ice Cream, and Stomp Rockets!
-              </p>
-            </li>
-            <li class="icon solid fa-flag">
-              <h3>Register</h3>
-              <div style="width:100%; text-align:left;"><iframe src="https://www.eventbrite.com/e/tjhsst-techstravaganza-2023-tickets-465757552377" frameborder="0" style="height:78vh;" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+                    <li class="icon solid fa-address-card">
+                        <h3>Who runs it?</h3>
+                        <p>
+                            TWIST (Tomorrow's Women in Science and Technology) organizes the
+                            event and is a student-run STEM outreach organization at TJHSST.
+                            Our mission is to encourage students from diverse and low-income
+                            backgrounds to pursue STEM subjects. We aim to increase female
+                            enrollment in traditionally underrepresented TJ research labs by
+                            empowering girls within our school community to pursue careers
+                            in these fields.
+                        </p>
+                    </li>
+                    <li class="icon solid fa-flask">
+                        <h3>Why come?</h3>
+                        <p>
+                            At Techstravaganza, you will find over 50 different labs and
+                            demonstrations that cover a wide range of STEM concepts so there
+                            is something for everyone! Some of our most popular labs include
+                            Banana DNA, Making Ice Cream, and Stomp Rockets!
+                        </p>
+                    </li>
+                    <li class="icon solid fa-flag">
+                        <h3>Register</h3>
+                        <div style="width:100%; text-align:left;">
+                            <iframe src="https://www.eventbrite.com/e/tjhsst-techstravaganza-2023-tickets-465757552377" frameborder="0" style="height:78vh;" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-	<div class="wrapper alt style5">
+    <div class="wrapper alt style5">
         <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
-          <h2>2023 Sponsors</h2>
+            <h2>2023 Sponsors</h2>
         </div>
 
         <a href="https://www.tjpartnershipfund.org/" target="_blank">
-          <img src="./images/TJPF.png" class="logos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
+            <img src="./images/TJPF.png" class="logos" title="TJ Partnership Fund" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 8vw;">
         </a>
-       
+
         <a href="https://www.virginia529.com/" target="_blank">
-          <img src="./images/22Sponsors/VA529_standard_4C.jpg" class="logos" title="Virginia529" style="padding-left:2vw;padding-bottom:3.5vh;max-height: 7vw;">
+            <img src="./images/22Sponsors/VA529_standard_4C.jpg" class="logos" title="Virginia529" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 7vw;">
         </a>
-        
-        <img src="./images/RoseFamily.png" class="logos" title="The Rose Family" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
-	    
+
+        <img src="./images/RoseFamily.png" class="logos" title="The Rose Family" style="padding-left: 1vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 8vw;">
+
         <a href="https://www.caci.com/" target="_blank">
-          <img src="./images/22Sponsors/CACI logo.png" class="logos" title="CACI" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
+            <img src="./images/22Sponsors/CACI logo.png" class="logos" title="CACI" style="padding-left: 1vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 8vw;">
         </a>
-	
-	<a href="https://www.fairfaxcollegiate.com/" target="_blank">
-          <img src="./images/22Sponsors/Fairfax collegiate.png" class="logos" title="Fairfax Collegiate" style="padding-left:2vw;padding-bottom:5vh;max-height: 10vw;">
-        </a>
-	
-<!--       <div class="wrapper alt style5">
-        <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
-          <h2>2021 Sponsors</h2>
-        </div>
 
-        <a href="https://www.tjpartnershipfund.org/" target="_blank">
-          <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
+        <a href="https://www.fairfaxcollegiate.com/" target="_blank">
+            <img src="./images/22Sponsors/Fairfax collegiate.png" class="logos" title="Fairfax Collegiate" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
         </a>
-       
-        <a href="https://www.virginia529.com/" target="_blank">
-          <img src="./images/Virginia529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
-        </a>
-        
-        <img src="./images/RoseFamily.png" class="pastlogos" title="The Rose Family" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
-        </a>
-	    
-        <a href="https://www.nvtc.org/" target="_blank">
-          <img src="./images/nvtc.jpg" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
-        </a>     -->
-        </br>
-        </br>
-      </div>
 
-      
-      <!--<div class = "wrapper style2" style="padding-top: 10px;padding-bottom: 10px;">
-        <div class = "tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
-          <h2>2021 Sponsors</h2>
-        </div>
-        <table>
-            <tr style = "border:none;">
-              <td>
+        <!--       <div class="wrapper alt style5">
+                <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
+                  <h2>2021 Sponsors</h2>
+                </div>
+
                 <a href="https://www.tjpartnershipfund.org/" target="_blank">
-                <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+                  <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
                 </a>
-                <p style = "width:375px; padding-left: 15px;">Description description description description description description description</p>
-              </td>
-              <td>
+
                 <a href="https://www.virginia529.com/" target="_blank">
-                  <img src="./images/Virginia529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+                  <img src="./images/Virginia529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
                 </a>
-                <p style = "width:500px; padding-left: 15px;">Description description description description description description description</p>
-              </td>
-              <td>
+
+                <img src="./images/RoseFamily.png" class="pastlogos" title="The Rose Family" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
+                </a>
+
                 <a href="https://www.nvtc.org/" target="_blank">
-                  <img src="./images/nvtc.jpg" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-                </a>
-                <p style = "width:250px; padding-left: 15px;">Description description description description description description description</p>
-              </td>
-            </tr>
-            <tr style = "border:none;">
-              <td>
-                <a href="https://www.tjpartnershipfund.org/" target="_blank">
-                <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-                </a>
-                <p style = "width:375px; padding-left: 15px;">Description description description description description description description</p>
-              </td>
-            </tr>
-        </table>
-      </div>-->
-    
-      <div class = "wrapper alt style5">
+                  <img src="./images/nvtc.jpg" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
+                </a>     -->
+        <br />
+        <br />
+    </div>
+
+
+    <!--<div class = "wrapper style2" style="padding-top: 10px;padding-bottom: 10px;">
+      <div class = "tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
+        <h2>2021 Sponsors</h2>
+      </div>
+      <table>
+          <tr style = "border:none;">
+            <td>
+              <a href="https://www.tjpartnershipfund.org/" target="_blank">
+              <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+              </a>
+              <p style = "width:375px; padding-left: 15px;">Description description description description description description description</p>
+            </td>
+            <td>
+              <a href="https://www.virginia529.com/" target="_blank">
+                <img src="./images/Virginia529.png" class="pastlogos" title="Virginia529" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+              </a>
+              <p style = "width:500px; padding-left: 15px;">Description description description description description description description</p>
+            </td>
+            <td>
+              <a href="https://www.nvtc.org/" target="_blank">
+                <img src="./images/nvtc.jpg" class="pastlogos" title="Northern Virginia Technology Council" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+              </a>
+              <p style = "width:250px; padding-left: 15px;">Description description description description description description description</p>
+            </td>
+          </tr>
+          <tr style = "border:none;">
+            <td>
+              <a href="https://www.tjpartnershipfund.org/" target="_blank">
+              <img src="./images/TJPF.png" class="pastlogos" title="TJ Partnership Fund" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
+              </a>
+              <p style = "width:375px; padding-left: 15px;">Description description description description description description description</p>
+            </td>
+          </tr>
+      </table>
+    </div>-->
+
+    <div class="wrapper alt style5">
         <div class="tableheader" style="text-align:left;padding-top:5vh; padding-left:2vw; ">
-          <h2>2023 Exhibitors</h2>
+            <h2>2023 Exhibitors</h2>
         </div>
 
-        <a href="https://www.navalengineers.org/" target="_blank">
-      <img src="./images/ASNE.jpg" class="logos" title="American Society Naval Engineers" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw; border-bottom: none;">
-    </a>
-      
-      <a href="https://alarm.com/" target="_blank">
-      <img src="./images/23Exhibitors/alarm-com.png" class="logos" title="Alarm.com" style="padding-left:2vw;padding-bottom:4vh;max-height: 8vw;">
-    </a>
-	      
-      <a href="https://artofproblemsolving.com/company" target="_blank">
-      <img src="./images/23Exhibitors/aops-logo.png" class="logos" title="AoPS" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
+        <a style="text-decoration:none;" href="https://www.navalengineers.org/" target="_blank">
+            <img src="./images/ASNE.jpg" class="logos" title="American Society Naval Engineers" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw; border-bottom: none;">
+        </a>
+
+        <a href="https://alarm.com/" target="_blank">
+            <img src="./images/23Exhibitors/alarm-com.png" class="logos" title="Alarm.com" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 8vw;">
+        </a>
+
+        <a href="https://artofproblemsolving.com/company" target="_blank">
+            <img src="./images/23Exhibitors/aops-logo.png" class="logos" title="AoPS" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 8vw;">
+        </a>
 
         <a href="http://www.booleangirl.org" target="_blank">
-      <img src="./images/BooleanGirl.png" class="logos" title="Boolean Girl" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="http://www.awisdc.org/" target="_blank">
-      <img src="./images/23Exhibitors/AWIS.png" class="logos" title="AWIS" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://www.projectcaelus.org/" target="_blank">
-      <img src="./images/caelus.png" class="logos" title="Project Caelus" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-      
-      <a href="https://www.gscnc.org/en/about-girl-scouts/our-program/highest-awards/silver-award.html" target="_blank">
-      <img src="./images/23Exhibitors/girl scouts.png" class="logos" title="Girl Scouts Troop 54090" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-      
-      <a href="https://megl.science.gmu.edu/" target="_blank">
-      <img src="./images/23Exhibitors/MEGL / GMU.png" class="logos" title="MEGL / GMU" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-      
-      <img src="./images/23Exhibitors/Global Geographic Society.png" class="logos" title="Global Geographic Society" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-      
-      <a href="https://www.nasa.gov/directorates/heo/scan/index.html" target="_blank">
-      <img src="./images/23Exhibitors/NASA Space Communications and Navigation (SCaN).png" class="logos" title="NASA Space Communications and Navigation (SCaN)" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://scigenius.com/" target="_blank">
-      <img src="./images/23Exhibitors/SciGenius.png" class="logos" title="SciGenius" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://scigenius.com/" target="_blank">
-      <img src="./images/23Exhibitors/Headstart Summer Prep.png" class="logos" title="Headstart Summer Prep" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://www.youthsteamoutreach.org/" target="_blank">
-      <img src="./images/23Exhibitors/Youth Steam Outreach.png" class="logos" title="Youth Steam Outreach" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://airandspace.si.edu/" target="_blank">
-      <img src="./images/23Exhibitors/NASM_Smithsonian.png" class="logos" title="Smithsonian National Air and Space Museum" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://www.novalabsmakerschool.org/" target="_blank">
-      <img src="./images/23Exhibitors/Makerschool.png" class="logos" title="Nova Labs MakerSchool" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://www.galaxyexplorers.org/" target="_blank">
-      <img src="./images/23Exhibitors/Federation of Galaxy Explorers.png" class="logos" title="Federation of Galaxy Explorers" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-      <a href="https://www.sciencenaturally.com/" target="_blank">
-      <img src="./images/23Exhibitors/Science, Naturally!.png" class="logos" title="Science, Naturally!" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
-    </a>
-	      
-<!-- 	<a href="https://www.nvcc.edu/systemic/" target="_blank">
+            <img src="./images/23Exhibitors/boolean_girl.png" class="logos" title="Boolean Girl" style="padding-left: 1vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://www.projectcaelus.org/" target="_blank">
+            <img src="./images/caelus.png" class="logos" title="Project Caelus" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://www.galaxyexplorers.org/" target="_blank">
+            <img src="./images/23Exhibitors/Federation of Galaxy Explorers.png" class="logos" title="Federation of Galaxy Explorers" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="http://www.awisdc.org/" target="_blank">
+            <img src="./images/23Exhibitors/AWIS.png" class="logos" title="AWIS" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 9vw;">
+        </a>
+
+        <a href="https://www.gscnc.org/en/about-girl-scouts/our-program/highest-awards/silver-award.html" target="_blank">
+            <img src="./images/23Exhibitors/girl scouts.png" class="logos" title="Girl Scouts Troop 54090" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://megl.science.gmu.edu/" target="_blank">
+            <img src="./images/23Exhibitors/MEGL GMU.png" class="logos" title="MEGL / GMU" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <img src="./images/23Exhibitors/Global Geographic Society.png" class="logos" title="Global Geographic Society" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+
+        <a href="https://www.youthsteamoutreach.org/" target="_blank">
+            <img src="./images/23Exhibitors/Youth Steam Outreach.png" class="logos" title="Youth Steam Outreach" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://www.nasa.gov/directorates/heo/scan/index.html" target="_blank">
+            <img src="./images/23Exhibitors/NASA Space Communications and Navigation (SCaN).png" class="logos" title="NASA Space Communications and Navigation (SCaN)" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://scigenius.com/" target="_blank">
+            <img src="./images/23Exhibitors/SciGenius.png" class="logos" title="SciGenius" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 8vw;">
+        </a>
+
+        <a href="https://scigenius.com/" target="_blank">
+            <img src="./images/23Exhibitors/Headstart Summer Prep.png" class="logos" title="Headstart Summer Prep" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://airandspace.si.edu/" target="_blank">
+            <img src="./images/23Exhibitors/NASM_Smithsonian.png" class="logos" title="Smithsonian National Air and Space Museum" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://www.novalabsmakerschool.org/" target="_blank">
+            <img src="./images/23Exhibitors/Makerschool.png" class="logos" title="Nova Labs MakerSchool" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+
+        <a href="https://www.sciencenaturally.com/" target="_blank">
+            <img src="./images/23Exhibitors/Science, Naturally!.png" class="logos" title="Science, Naturally!" style="padding-left: 2vw; padding-bottom: 2vh; padding-top: 2vh; max-height: 10vw;">
+        </a>
+    <br />
+    <br />
+
+        <!-- 	<a href="https://www.nvcc.edu/systemic/" target="_blank">
       <img src="./images/NOVA.png" class="pastlogos" title="NOVA SySTEMic" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
-	      
-	<a href="https://xtremevoltage10515.wixsite.com/xtremevoltage10515?fbclid=IwAR2YOKVRqnVA017HiWGnW8STSc4x-2xmdHZhsflJGt0bVMBoPFvXCrNLdCA" target="_blank">
+
+    <a href="https://xtremevoltage10515.wixsite.com/xtremevoltage10515?fbclid=IwAR2YOKVRqnVA017HiWGnW8STSc4x-2xmdHZhsflJGt0bVMBoPFvXCrNLdCA" target="_blank">
       <img src="./images/XtremeVoltage.png" class="pastlogos" title="Fair Lakes Youth Association - XtremeVoltage" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
-	      
-	<a href="http://jackeddielove.wikidot.com/" target="_blank">
+
+    <a href="http://jackeddielove.wikidot.com/" target="_blank">
       <img src="./images/logo - Jack Love.png" class="pastlogos" title="JEL Design Studio" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a>
-	      
-	<a href="https://www.fairfaxcounty.gov/publicworks/wastewater" target="_blank">
+
+    <a href="https://www.fairfaxcounty.gov/publicworks/wastewater" target="_blank">
       <img src="./images/Wastewater Logo Color with Text White BG 2019 - Melissa M Atwood.png" class="pastlogos" title="Fairfax County Wastewater Management" style="padding-left:2vw;padding-bottom:4vh;max-height: 10vw;">
     </a> -->
-        
-      </div>
 
-      <!-- Google Maps & Contact -->
-      <div class = "wrapper style1 special">
-        <div class = "wrapper style1 special float-container">
+    </div>
 
-          <div class="float-child">
-            <h2><div class = "fas fa-map-marked-alt  fa-2x"></div>  WHERE</h2>
-            <iframe width="100%" frameborder="10" style="height:65vh; border-radius:15px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJleh3KOCyt4kRq7zT9EpWL8E&amp;key=AIzaSyA7npBluaABZS9BTs6y2Sf1JKEic4iYR4k" allowfullscreen=""></iframe>
-          </div>
-          
-          <div class="float-child">
-            <h2><div class="fas fa-comment-alt fa-2x"></div>  CONTACT</h2>
-            <div style="opacity: 0.9; background-image: url('./images/contactbg2.jpg'); background-size: 100%; background-repeat: no-repeat; width: 100%; height: 65vh; border-radius: 15px;">
-                <div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
-                    <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fas fa-envelope fa-lg" style="color: lightblue; margin-top: 130px;"></div>  <a href="mailto: twistcoordinators@gmail.com">twistcoordinators@gmail.com</a></b>
-                    <br />
-                    <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fas fa-map-pin fa-lg" style="color: lightblue;"></div>  <a href="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJleh3KOCyt4kRq7zT9EpWL8E&amp">6560 Braddock Road, Alexandria, VA 22312</a></b>
-                    <br />
-                    <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fab fa-facebook-square fa-lg" style="color: lightblue;"></div>  <a href="https://www.facebook.com/TJTechstrav/">@TJTechstrav</a></b>
-                    <br />
-                    <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fab fa-instagram fa-lg" style="color: lightblue;"></div>  <a href="https://www.instagram.com/tj.twist/">@tj.twist</a></b>
+    <!-- Google Maps & Contact -->
+    <div class="wrapper style1 special">
+        <div class="wrapper style1 special float-container">
+
+            <div class="float-child">
+                <h2><div class="fas fa-map-marked-alt  fa-2x"></div>  WHERE</h2>
+                <iframe width="100%" frameborder="10" style="height:65vh; border-radius:15px;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJleh3KOCyt4kRq7zT9EpWL8E&amp;key=AIzaSyA7npBluaABZS9BTs6y2Sf1JKEic4iYR4k" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="float-child">
+                <h2><div class="fas fa-comment-alt fa-2x"></div>  CONTACT</h2>
+                <div style="opacity: 0.9; background-image: url('./images/contactbg2.jpg'); background-size: 100%; background-repeat: no-repeat; width: 100%; height: 65vh; border-radius: 15px;">
+                    <div style="width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
+                        <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fas fa-envelope fa-lg" style="color: lightblue; margin-top: 130px;"></div>  <a href="mailto: twistcoordinators@gmail.com">twistcoordinators@gmail.com</a></b>
+                        <br />
+                        <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fas fa-map-pin fa-lg" style="color: lightblue;"></div>  <a href="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJleh3KOCyt4kRq7zT9EpWL8E&amp">6560 Braddock Road, Alexandria, VA 22312</a></b>
+                        <br />
+                        <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fab fa-facebook-square fa-lg" style="color: lightblue;"></div>  <a href="https://www.facebook.com/TJTechstrav/">@TJTechstrav</a></b>
+                        <br />
+                        <b style="font-size: 1.5vw; line-height: 5vw; color: white;"><div class="fab fa-instagram fa-lg" style="color: lightblue;"></div>  <a href="https://www.instagram.com/tj.twist/">@tj.twist</a></b>
+                    </div>
                 </div>
             </div>
-          </div>
 
         </div>
-      </div>
+    </div>
 
-      <div class = "wrapper style1 special" style = "text-align: center;">
+    <div class="wrapper style1 special" style="text-align: center;">
         </br>
         <b>To contact us directly, please go to the "<a href="contact.html">Contact Us</a>" section!</b>
-      </div>
+    </div>
 
 
-      <!-- Footer -->
-      <div>
+    <!-- Footer -->
+    <div>
         <footer id="footer">
-          <ul class="copyright">
-            <li>Organized and Owned By TJ TWIST</li>
-<!--             <li>Design: HTML5 UP</li> -->
-          </ul>
+            <ul class="copyright">
+                <li>Organized and Owned By TJ TWIST</li>
+                <!--             <li>Design: HTML5 UP</li> -->
+            </ul>
         </footer>
-      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -397,5 +395,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
