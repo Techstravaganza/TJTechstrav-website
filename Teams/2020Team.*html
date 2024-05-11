@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en-us">
+<head>
+   <meta charset="utf-8">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="icon" href="../fav_icon_circle.ico">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="description" content="TJ Techstravaganza" />
+   <title>TJ Techstravaganza</title>
+   <link href="../style.css" rel="stylesheet" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+   
+<body>
+   <div id="wrapper">
+       <!-- Navigation Bar -->
+       <nav class="navbar navbar-default navbar-fixed-top">
+           <div class="container">
+               <div class="navbar-header">
+                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>                       
+     </button>
+                   <a class="navbar-brand" href="/index.html"><img src="/images/homebtn.png" style="max-width:12%; height:auto;transform: translateY(-22%);"></a>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar" style="font-size:2.5vmin">
+                   <ul class="nav navbar-nav navbar-right">
+                       <li><a href="2020Team.html">OUR TEAM</a></li>
+                       <li class="dropdown">
+                           <a href="javascript:void(0)" class="dropbtn">PHOTOS</a>
+                           <div class="dropdown-content">
+                               <a href="../PastPhotos/2015photos.html">TECHSTRAV 2015</a>
+			       <a href="../PastPhotos/2016photos.html">TECHSTRAV 2016</a>
+                               <a href="../PastPhotos/2017photos.html">TECHSTRAV 2017</a>
+                               <a href="../PastPhotos/2018photos.html">TECHSTRAV 2018</a>
+			       <a href="../PastPhotos/2019photos.html">TECHSTRAV 2019</a>
+                           </div>
+                       </li>
+                       <li class="dropdown">
+                           <a href="javascript:void(0)" class="dropbtn">SUPPORT US</a>
+                           <div class="dropdown-content">
+                               <a href="/donate.html">DONATE</a>
+                           </div>
+                       </li>
+                       <li><a href="/contact.html">CONTACT</a></li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+
+     <!-- Social Media Buttons -->
+     <div>
+       <a href="https://www.facebook.com/TJTechstrav/" target="_blank" title="Facebook">
+       <img style="top:10vh" id="fbBtn" class="snsButton" src="/images/sns icons/facebookicon.png">
+     </a>
+       <a href="https://www.instagram.com/tj.twist/" target="_blank" title="Instagram">
+       <img style="top:20vh" id="igBtn" class="snsButton" src="/images/sns icons/instagramicon.png">
+     </a>
+       <a href="https://twitter.com/TJTechstrav" target="_blank" title="Twitter">
+       <img style="top:30vh" id="twBtn" class="snsButton" src="/images/sns icons/twittericon.png">
+     </a>
+     </div>
+
+          <!-- Header -->
+          <div id="header" style="padding-top:80px;">
+          <div id="headerlabel" style="padding-bottom:15px">OUR TEAM</div>
+
+           <!-- Rose Du -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/roseepfp.JPG" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Rose Du<br>
+                               <div style="font-size:3.75vmin;">President | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Rose is a senior and this is her fourth year in TWIST. This is her third year as an officer, specifically president. She is on the TJ dance team as well as a studio dancer at Axis Dance outside of school. She loves adventure but also loves to stay inside and bullet journal.<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Subject: </b>Biology<br>
+                                   <b>Favorite Sport: </b>Dance<br>
+                                   <b>Favorite TV Show: </b>Black Mirror<br>
+                                   <b>Favorite Color: </b>Sea Green</a>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+           
+           <!-- Meghna Sharma -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/MeghnaSharmaPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Meghna Sharma<br>
+                               <div style="font-size:3.75vmin;">Co-President | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Meghna is a senior and this is her fourth year on TWIST and third year as officer and she's excited to be your co-pres! She swims for TJSD and in her free time she enjoys running, baking, photography, travelling, and listening to music!<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Sport: </b>Swim<br>
+                                   <b>Favorite Destination: </b>Italy<br>
+                                   <b>Favorite TV Show: </b>Gilmore Girls<br>
+                                   <b>Favorite Color: </b>Teal<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+	
+	<!-- Brianna Ta -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/BriannaTPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Brianna Ta<br>
+                               <div style="font-size:3.75vmin;">Publicist | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Brianna is a senior who joined TWIST two years ago and is an officer this year. She loves Netflix, wrestling, and listening to music!<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Subject: </b>Computer Science<br>
+                                   <b>Favorite TV Show: </b>Grey's Anatomy<br>
+                                   <b>Favorite Sport: </b>Wrestling<br>
+                                   <b>Favorite Food: </b>Pho<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+
+        <!-- Sarah Wang -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/SarahWPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Sarah Wang<br>
+                               <div style="font-size:3.75vmin;">Treasurer | Senior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Sarah is a senior who joined TWIST three years ago and is an officer this year. She loves watching Netflix, swimming, and traveling. <br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Food: </b>Pasta<br>
+                                   <b>Favorite Artist: </b>Surfaces<br>
+                                   <b>Favorite TV Show: </b>Stranger Things<br>
+                                   <b>Favorite Color: </b>Light Blue<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+	
+	<!-- Abena K-t -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/AbenaPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Abena K-t<br>
+                               <div style="font-size:3.75vmin;">Treasurer | Junior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Abena is a junior and joined TWIST three years ago. This is her first year as an officer. She loves to listen to music, bake, and watch shows on Netflix<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Activity: </b>Ballet<br>
+                                   <b>Favorite Show: </b>Merlin<br>
+                                   <b>Favorite Season: </b>Spring<br>
+                                   <b>Favorite Drink: </b>Sprite<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+	
+           <!-- Sheryn Livingstone -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/SherynPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Sheryn Livingstone<br>
+                               <div style="font-size:3.75vmin;">Secretary | Junior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Sheryn is a junior and is looking forward to her second year as a TWIST officer and third year on Techstrav team! She loves tennis, listening to music, and watching Sunday night football. <br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite NFL Team: </b>Baltimore Ravens<br>
+                                   <b>Favorite Color: </b>Dark Purple<br>
+                                   <b>Favorite Movie: </b>Now You See Me<br>
+                                   <b>Favorite TV Show: </b>Parks & Rec<br> 
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+	
+	<!-- Tanisha Pagadala -->
+           <div style="margin:30px;">
+               <table>
+                   <col width="30%">
+                   <col width="70%">
+                   <tr>
+                       <td rowspan="2"><img src="/images/PFPs/TanishaPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                       <td>
+                           <div class="teamheader">Tanisha Pagadala<br>
+                               <div style="font-size:3.75vmin;">Activities Coordinator | Junior</div>
+                           </div>
+                           <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                               Tanisha is a junior and is excited to start her third year of TWIST as an officer! She loves card games, watching Disney movies, and playing tennis.<br><br>
+                               <div style="line-height:1.7;">
+                                   <b>Favorite Snack: </b>Goldfish<br>
+                                   <b>Favorite Artist: </b>Alec Benjamin<br>
+                                   <b>Favorite Podcast: </b>Dear Hank and John<br>
+                                   <b>Favorite Movie: </b>Tangled<br>
+                               </div>
+                           </div>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+
+        <!-- Aidan Harbison -->
+        <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/AidanHarbisonPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Aidan Harbison<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Senior</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Aidan is a senior at TJ and super excited for his second year working with the Techstrav team! Outside of school, he enjoys being a part of the TJ color guard team and French Honor Society. In his free time, he also loves to read, play a lot of video games, listen to music, and learn new languages.<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite Movie: </b>Arrival<br>
+                                <b>Favorite Artist: </b>Taylor Swift<br>
+                                <b>Favorite Video Game: </b>Hollow Knight<br>
+                                <b>Favorite Book: </b>Six of Crows<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Caroline Chen -->
+           <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/CarolineChenPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Caroline Chen<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Junior</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Caroline is a junior, and this is her second year on the Techstrav team. In her free time, she loves playing volleyball, singing, and playing the ukulele.<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite Movie: </b>The Parent Trap (1998)<br>
+                                <b>Favorite Breakfast: </b>Smoothie Bowls<br>
+                                <b>Favorite Color: </b>Cerulean<br>
+                                <b>Favorite Song: </b>"She Used To Be Mine"<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Melissa Wu -->
+        <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/MelissaWuPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Melissa Wu<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Junior</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Melissa is a junior and this is her second year on the Outreach team for Techstrav. She enjoys playing piano, baking, and doing calligraphy!<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite Subject: </b>Computer Science<br>
+                                <b>Favorite Fruit: </b>Mango<br>
+                                <b>Favorite Drink: </b>Bubble Tea<br>
+                                <b>Favorite TV Show: </b>Crash Landing on You<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Joanna Cheng -->
+        <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/JoannaChengPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Joanna Cheng<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Junior</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Joanna is a junior and is excited to be starting her first year on the Techstrav team! In her free time, she plays Among Us with friends, card games with family, and piano.<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite Color: </b>Blue<br>
+                                <b>Favorite Subject: </b>Computer Science<br>
+                                <b>Favorite Fruit: </b>Peach<br>
+                                <b>Favorite Instrument: </b>Piano<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Juliette Kim -->
+        <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/JulietteKimPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Juliette Kim<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Junior</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Juliette is a junior, and this is her first year on the Techstrav team. She's in the school's marching band and drumline and loves to watch Tiktoks and spend time with her friends and family.<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite Drink: </b>Chai Latte<br>
+                                <b>Favorite Artist: </b>Joji<br>
+                                <b>Favorite Cookie: </b>Gingerbread<br>
+                                <b>Favorite Color: </b>Light Pink<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Esha Karlekar -->
+        <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/EshaKarlekarPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Esha Karlekar<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Junior</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Esha is a junior and this is her first year on the Techstrav team. She’s on TJ’s debate team and lacrosse team. In her free time, she loves baking and spending time with her sister.<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite TV Show: </b>Parks and Rec<br>
+                                <b>Favorite Drink: </b>Chai<br>
+                                <b>Favorite Color: </b>Sage Green<br>
+                                <b>Favorite Cookie: </b>Snickerdoodle<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Shahzad Sohail -->
+        <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/ShahzadSohailPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Shahzad Sohail<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Sophomore</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Shahzad is a sophomore, and this is his first year on the Techstrav team. In his free time, he loves playing sports and spending time with friends and family.<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite Sport: </b>Football<br>
+                                <b>Favorite TV Show: </b>Grey's Anatomy<br>
+                                <b>Favorite Color: </b>White<br>
+                                <b>Favorite Subject: </b>Neuroscience<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Rebecca Hsieh -->
+        <div style="margin:30px;">
+            <table>
+                <col width="30%">
+                <col width="70%">
+                <tr>
+                    <td rowspan="2"><img src="/images/PFPs/RebeccaHsiehPFP.jpg" width="90%" style="border-radius:50%; margin:auto; text-align:center; display:block" /></td>
+                    <td>
+                        <div class="teamheader">Rebecca Hsieh<br>
+                            <div style="font-size:3.75vmin;">Techstrav Supervisor | Sophomore</div>
+                        </div>
+                        <div class="contenttxt" style="font-size:2.7vmin; padding:2.5vmin; color:#969696;">
+                            Rebecca is a sophomore, and this is her first year on the Techstrav team. In her free time, she likes watching football.<br><br>
+                            <div style="line-height:1.7;">
+                                <b>Favorite Subject: </b>Psychology<br>
+                                <b>Favorite Football Team: </b>Patriots<br>
+                                <b>Favorite Color: </b>Green<br>
+                                <b>Favorite Sport: </b>Fencing<br>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+  
+   
+           <!-- Back to Top Button -->
+           <button onclick="topFunction()" id="myBtn" title="Back to Top"></button>
+
+           <!-- Footer -->
+           <div id="footer" style="font-size:2.75vmin;">
+               <i>Organized and Owned by TJ TWIST</i>
+               <br />
+           </div>
+           <br>
+           <br>
+           <script>
+               // When the user clicks on the button, scroll to the top of the document 
+               function topFunction() {
+                   document.body.scrollTop = 0;
+                   document.documentElement.scrollTop = 0;
+               }
+           </script>
+</body>
+</html>
